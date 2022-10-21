@@ -1,0 +1,118 @@
+module base {
+
+
+    recipe Make Plantain Poultice
+    {
+        keep [Recipe.GetItemTypes.MortarPestle],
+        Plantain=5,
+
+        Result:PlantainCataplasm,
+        Time:60.0,
+        Category:Health,
+        OnCreate:FavGiveXP
+    }
+
+    recipe Make Comfrey Poultice
+    {
+        keep [Recipe.GetItemTypes.MortarPestle],
+        Comfrey=5,
+
+        Result:ComfreyCataplasm,
+        Time:60.0,
+        Category:Health,
+        OnCreate:FavGiveXP
+    }
+
+    recipe Disinfect Rag
+    {
+        destroy RippedSheets,
+        [Recipe.GetItemTypes.Liquor];10,
+
+        Result:AlcoholRippedSheets,
+        Time:40.0,
+        Category:Health,
+        OnCreate:FavGiveXP
+    }
+
+    recipe Disinfect Bandage
+    {
+        destroy Bandage,
+        [Recipe.GetItemTypes.Liquor];10,
+
+        Result:AlcoholBandage,
+        Time:40.0,
+        Category:Health,
+        OnCreate:FavGiveXP
+    }
+
+    recipe Disinfect Bandage
+    {
+        destroy Bandage,
+        WaterPot;5,
+        CanBeDoneFromFloor:true,
+        Result:AlcoholBandage,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Health,
+        OnCreate:FavGiveXP
+    }
+
+    recipe Disinfect Rag
+    {
+        destroy RippedSheets,
+        WaterPot;5,
+        CanBeDoneFromFloor:true,
+        Result:AlcoholRippedSheets,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Health,
+        OnCreate:FavGiveXP
+    }
+
+    recipe Disinfect Bandage
+    {
+        destroy Bandage,
+        WaterSaucepan;10,
+        CanBeDoneFromFloor:true,
+        Result:AlcoholBandage,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Health,
+        OnCreate:FavGiveXP
+    }
+
+    recipe Disinfect Rag
+    {
+        destroy RippedSheets,
+        WaterSaucepan;10,
+        CanBeDoneFromFloor:true,
+        Result:AlcoholRippedSheets,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Health,
+        OnCreate:FavGiveXP
+    }
+
+        recipe Disinfect Bandage
+    {
+        destroy Bandage,
+        [Recipe.GetItemTypes.Disinfectant]=3,
+
+        Result:AlcoholBandage,
+        Time:40.0,
+        Category:Health,
+        OnCreate:FavGiveXP,
+    }
+
+    recipe Disinfect Rag
+    {
+        RippedSheets,
+        [Recipe.GetItemTypes.Disinfectant]=3,
+
+        Result:AlcoholRippedSheets,
+        Time:40.0,
+        Category:Health,
+        OnCreate:FavGiveXP
+    }
+
+}

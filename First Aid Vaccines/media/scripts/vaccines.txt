@@ -1,0 +1,45 @@
+module FAVACC {
+    imports {
+        Base
+    }
+    item LooseZombieCells
+{
+    DisplayCategory = FirstAid,
+    Weight  =   0.1,
+    Type    =   Food,
+    DisplayName =   Zombie Cells,
+    Icon    =   Antibiotics,
+    CustomContextMenu   =   Take,
+    CantBeFrozen = TRUE,
+    Tooltip = Tooltip_Antibiotics,
+    Medical = TRUE,
+    WorldStaticModel = Antibiotics,
+    Poison = true,
+    PoisonDetectionLevel = 200,
+    PoisonPower = 4,
+    UseForPoison = 5,
+    onEat = ConsumeVaccine,
+}
+
+
+
+    item ConcentratedZombieCells
+{
+    DisplayCategory = FirstAid,
+    Weight  =   0.1,
+    Type    =   Food,
+    DisplayName =   Concentrated Zombie Cells,
+    Icon    =   Antibiotics,
+    CustomContextMenu   =   Take,
+    CantBeFrozen = TRUE,
+    Tooltip = Tooltip_Antibiotics,
+    Medical = TRUE,
+    WorldStaticModel = Antibiotics,
+    Poison = true,
+    PoisonDetectionLevel = 200,
+    PoisonPower = 4,
+    UseForPoison = 5,
+    onEat = ConsumeVaccine,
+}
+}
+
