@@ -11,10 +11,12 @@ function VaccineFunction(player)
 
     if mod_data.vac_increasing == 1
     then
-        mod_data.current_vaccine_level = mod_data.current_vaccine_level + vaccine_increment_amt
-    elseif (mod_data.current_vaccine_level > 0)
+        mod_data.current_vaccine_level = mod_data.current_vaccine_level + (mod_data.vaccine_power/168)
+    elseif mod_data.current_vaccine_level > 0
     then
-        mod_data.current_vaccine_level = mod_data.current_vaccine_level - vaccine_increment_amt
+        mod_data.current_vaccine_level = mod_data.current_vaccine_level - (mod_data.vaccine_power/900)
+    else
+        mod_data.current_vaccine_level = 0
     end
 
     if mod_data.current_vaccine_level > mod_data.vaccine_power
@@ -29,19 +31,13 @@ function VaccineFunction(player)
     then
         local random_number = ZombRand(101)
 
-        if mod_data.current_vaccine_level > random_number
+        if (mod_data.current_vaccine_level)/72 > random_number
         then
             print("Healing Infection")
             player:getBodyDamage():setInfected(false)
             player:getBodyDamage():setInfectionLevel(0.0)
         end
     end
-    print('VaccineManager.increasing')
-    print(mod_data.vac_increasing)
-    print('VaccineManager.current_vaccine_level')
-    print(mod_data.current_vaccine_level)
-    print("VaccinePower.vaccine_power")
-    print(mod_data.vaccine_power)
 
 end
 
@@ -64,7 +60,27 @@ function SetVaccine(player, items)
 
     mod_data = player:getModData()
 
-    if items:getName() == 'Concentrated Zombie Cells'
+    print(items:getName())
+
+    if items:getName() == 'Boiled Zombie Cells'
+    then
+        print('Vaccine Power set to 5')
+        mod_data.vaccine_power = 12
+    end
+
+    if items:getName() == 'Crude Vaccine'
+    then
+        print('Vaccine Power set to 5')
+        mod_data.vaccine_power = 25
+    end
+
+    if items:getName() == 'Zombie Vaccine'
+    then
+        print('Vaccine Power set to 5')
+        mod_data.vaccine_power = 50
+    end
+
+    if items:getName() == 'Perfect Zombie Vaccine'
     then
         print('Vaccine Power set to 5')
         mod_data.vaccine_power = 100
@@ -123,9 +139,8 @@ end
 
 --Events.EveryOneMinute.Add(IncrementVaccine)
 
-Events.OnLoad.Add(PrintStuff)
+Events.EveryHours.Add(IncrementVaccine)
 
-Events.EveryTenMinutes.Add(IncrementVaccine)
 
 --EveryHours and EveryDays
 --https://pzwiki.net/wiki/Modding:Lua_Events

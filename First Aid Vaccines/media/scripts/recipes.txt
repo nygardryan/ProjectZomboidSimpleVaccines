@@ -1,5 +1,8 @@
-module base {
-
+module FAVACCINE {
+    
+    imports {
+        Base
+    }
 
     recipe Make Plantain Poultice
     {
@@ -9,7 +12,8 @@ module base {
         Result:PlantainCataplasm,
         Time:60.0,
         Category:Health,
-        OnCreate:FavGiveXP
+        OnGiveXP:Give10AidXP,
+
     }
 
     recipe Make Comfrey Poultice
@@ -20,7 +24,8 @@ module base {
         Result:ComfreyCataplasm,
         Time:60.0,
         Category:Health,
-        OnCreate:FavGiveXP
+        OnGiveXP:Give10AidXP,
+
     }
 
     recipe Disinfect Rag
@@ -31,7 +36,8 @@ module base {
         Result:AlcoholRippedSheets,
         Time:40.0,
         Category:Health,
-        OnCreate:FavGiveXP
+        OnGiveXP:Give10AidXP,
+
     }
 
     recipe Disinfect Bandage
@@ -42,7 +48,8 @@ module base {
         Result:AlcoholBandage,
         Time:40.0,
         Category:Health,
-        OnCreate:FavGiveXP
+        OnGiveXP:Give10AidXP,
+
     }
 
     recipe Disinfect Bandage
@@ -54,7 +61,8 @@ module base {
         Time:100.0,
         Heat:-0.22,
         Category:Health,
-        OnCreate:FavGiveXP
+        OnGiveXP:Give10AidXP,
+
     }
 
     recipe Disinfect Rag
@@ -66,7 +74,8 @@ module base {
         Time:100.0,
         Heat:-0.22,
         Category:Health,
-        OnCreate:FavGiveXP
+        OnGiveXP:Give10AidXP,
+
     }
 
     recipe Disinfect Bandage
@@ -78,7 +87,8 @@ module base {
         Time:100.0,
         Heat:-0.22,
         Category:Health,
-        OnCreate:FavGiveXP
+        OnGiveXP:Give10AidXP,
+
     }
 
     recipe Disinfect Rag
@@ -90,7 +100,8 @@ module base {
         Time:100.0,
         Heat:-0.22,
         Category:Health,
-        OnCreate:FavGiveXP
+        OnGiveXP:Give10AidXP,
+
     }
 
         recipe Disinfect Bandage
@@ -101,7 +112,8 @@ module base {
         Result:AlcoholBandage,
         Time:40.0,
         Category:Health,
-        OnCreate:FavGiveXP,
+        OnGiveXP:Give10AidXP,
+
     }
 
     recipe Disinfect Rag
@@ -112,7 +124,22 @@ module base {
         Result:AlcoholRippedSheets,
         Time:40.0,
         Category:Health,
-        OnCreate:FavGiveXP
+        OnGiveXP:Give10AidXP,
+
     }
+
+
+    recipe Create Crude Vaccine
+    {
+        destroy RippedSheets,
+        WaterSaucepan;10,
+        CanBeDoneFromFloor:true,
+        Result:AlcoholRippedSheets,
+        Time:100.0,
+        Category:Health,
+        OnGiveXP:Give10AidXP,
+        OnCreate:FavGiveXP,
+    }
+
 
 }
