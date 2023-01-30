@@ -12,8 +12,7 @@ module FAVACCINE {
         Result:PlantainCataplasm,
         Time:60.0,
         Category:Health,
-        OnGiveXP:Give10AidXP,
-
+        OnCreate:FavGiveXP,
     }
 
     recipe Make Comfrey Poultice
@@ -24,20 +23,7 @@ module FAVACCINE {
         Result:ComfreyCataplasm,
         Time:60.0,
         Category:Health,
-        OnGiveXP:Give10AidXP,
-
-    }
-
-    recipe Disinfect Rag
-    {
-        destroy RippedSheets,
-        [Recipe.GetItemTypes.Liquor];10,
-
-        Result:AlcoholRippedSheets,
-        Time:40.0,
-        Category:Health,
-        OnGiveXP:Give10AidXP,
-
+        OnCreate:FavGiveXP,
     }
 
     recipe Disinfect Bandage
@@ -48,8 +34,7 @@ module FAVACCINE {
         Result:AlcoholBandage,
         Time:40.0,
         Category:Health,
-        OnGiveXP:Give10AidXP,
-
+        OnCreate:FavGiveXP,
     }
 
     recipe Disinfect Bandage
@@ -61,22 +46,10 @@ module FAVACCINE {
         Time:100.0,
         Heat:-0.22,
         Category:Health,
-        OnGiveXP:Give10AidXP,
+        OnCreate:FavGiveXP,
 
     }
 
-    recipe Disinfect Rag
-    {
-        destroy RippedSheets,
-        WaterPot;5,
-        CanBeDoneFromFloor:true,
-        Result:AlcoholRippedSheets,
-        Time:100.0,
-        Heat:-0.22,
-        Category:Health,
-        OnGiveXP:Give10AidXP,
-
-    }
 
     recipe Disinfect Bandage
     {
@@ -87,22 +60,10 @@ module FAVACCINE {
         Time:100.0,
         Heat:-0.22,
         Category:Health,
-        OnGiveXP:Give10AidXP,
+        OnCreate:FavGiveXP,
 
     }
 
-    recipe Disinfect Rag
-    {
-        destroy RippedSheets,
-        WaterSaucepan;10,
-        CanBeDoneFromFloor:true,
-        Result:AlcoholRippedSheets,
-        Time:100.0,
-        Heat:-0.22,
-        Category:Health,
-        OnGiveXP:Give10AidXP,
-
-    }
 
         recipe Disinfect Bandage
     {
@@ -112,19 +73,7 @@ module FAVACCINE {
         Result:AlcoholBandage,
         Time:40.0,
         Category:Health,
-        OnGiveXP:Give10AidXP,
-
-    }
-
-    recipe Disinfect Rag
-    {
-        RippedSheets,
-        [Recipe.GetItemTypes.Disinfectant]=3,
-
-        Result:AlcoholRippedSheets,
-        Time:40.0,
-        Category:Health,
-        OnGiveXP:Give10AidXP,
+        OnCreate:FavGiveXP,
 
     }
 
@@ -137,7 +86,6 @@ module FAVACCINE {
         Result:AlcoholRippedSheets,
         Time:100.0,
         Category:Health,
-        OnGiveXP:Give10AidXP,
         OnCreate:FavGiveXP,
     }
 
