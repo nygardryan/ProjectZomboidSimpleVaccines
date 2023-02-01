@@ -77,17 +77,51 @@ module FAVACCINE {
 
     }
 
+    recipe Boil Zombie Cells 
+    {
+        LooseZombieCells=1,
+        WaterSaucepan;10,
+        Heat:-0.22,
+        Result:BoiledZombieCells,
+        Time:70.0,
+        OnCreate:FavGiveXP,
+        Category:Health,
+    }
 
     recipe Create Crude Vaccine
     {
-        destroy RippedSheets,
+        BoiledZombieCells=2,
         WaterSaucepan;10,
-        CanBeDoneFromFloor:true,
-        Result:AlcoholRippedSheets,
-        Time:100.0,
+        Pills=2,
+        Result:CrudeVaccine,
+        Time:150.0,
         Category:Health,
         OnCreate:FavGiveXP,
     }
 
+    recipe Create Simple Vaccine
+    {
+        BoiledZombieCells=3,
+        WaterSaucepan;10,
+        Pills=2,
+        ComfreyCataplasm=1,
+        Result:ZombieVaccine,
+        Time:170.0,
+        Category:Health,
+        OnCreate:FavGiveXP,
+    }
+
+    recipe Create Effective Vaccine
+    {
+        BoiledZombieCells=4,
+        WaterSaucepan;10,
+        Pills=2,
+        ComfreyCataplasm=1,
+        PillsAntiDep=2,
+        Result:PerfectedZombieVaccine,
+        Time:200.0,
+        Category:Health,
+        OnCreate:FavGiveXP,
+    }
 
 }

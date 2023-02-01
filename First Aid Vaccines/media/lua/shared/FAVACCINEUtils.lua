@@ -26,6 +26,7 @@ function VaccineFunction(player)
 
     print("Player Infected")
     print(player:getBodyDamage():IsInfected())
+    print(mod_data.current_vaccine_level)
 
     if player:getBodyDamage():IsInfected()
     then
@@ -64,25 +65,25 @@ function SetVaccine(player, items)
 
     if items:getName() == 'Boiled Zombie Cells'
     then
-        print('Vaccine Power set to 5')
+        print('Vaccine Power set to 12')
         mod_data.vaccine_power = 12
     end
 
     if items:getName() == 'Crude Vaccine'
     then
-        print('Vaccine Power set to 5')
+        print('Vaccine Power set to 25')
         mod_data.vaccine_power = 25
     end
 
     if items:getName() == 'Zombie Vaccine'
     then
-        print('Vaccine Power set to 5')
+        print('Vaccine Power set to 50')
         mod_data.vaccine_power = 50
     end
 
     if items:getName() == 'Perfect Zombie Vaccine'
     then
-        print('Vaccine Power set to 5')
+        print('Vaccine Power set to 100')
         mod_data.vaccine_power = 100
     end
 
