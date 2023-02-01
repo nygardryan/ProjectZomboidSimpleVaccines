@@ -1,0 +1,5 @@
+UI_EN = { 
+
+FAV_UI_EXTRACT_DNA = "Extract DNA"
+
+}
