@@ -1,88 +1,12 @@
 module FAVACCINE {
-    
-    imports {
-        Base
-    }
-
-    recipe Make Plantain Poultice
-    {
-        keep [Recipe.GetItemTypes.MortarPestle],
-        Plantain=5,
-
-        Result:PlantainCataplasm,
-        Time:60.0,
-        Category:Health,
-        OnCreate:FavGiveXP,
-    }
-
-    recipe Make Comfrey Poultice
-    {
-        keep [Recipe.GetItemTypes.MortarPestle],
-        Comfrey=5,
-
-        Result:ComfreyCataplasm,
-        Time:60.0,
-        Category:Health,
-        OnCreate:FavGiveXP,
-    }
-
-    recipe Disinfect Bandage
-    {
-        destroy Bandage,
-        [Recipe.GetItemTypes.Liquor];10,
-
-        Result:AlcoholBandage,
-        Time:40.0,
-        Category:Health,
-        OnCreate:FavGiveXP,
-    }
-
-    recipe Disinfect Bandage
-    {
-        destroy Bandage,
-        WaterPot;5,
-        CanBeDoneFromFloor:true,
-        Result:AlcoholBandage,
-        Time:100.0,
-        Heat:-0.22,
-        Category:Health,
-        OnCreate:FavGiveXP,
-
-    }
-
-
-    recipe Disinfect Bandage
-    {
-        destroy Bandage,
-        WaterSaucepan;10,
-        CanBeDoneFromFloor:true,
-        Result:AlcoholBandage,
-        Time:100.0,
-        Heat:-0.22,
-        Category:Health,
-        OnCreate:FavGiveXP,
-
-    }
-
-
-        recipe Disinfect Bandage
-    {
-        destroy Bandage,
-        [Recipe.GetItemTypes.Disinfectant]=3,
-
-        Result:AlcoholBandage,
-        Time:40.0,
-        Category:Health,
-        OnCreate:FavGiveXP,
-
-    }
 
     recipe Boil Zombie Cells 
-    {
-        LooseZombieCells=1,
+    {   
+        FAVACC.LooseZombieCells=1,
         WaterSaucepan;10,
+        CanBeDoneFromFloor:true,
         Heat:-0.22,
-        Result:BoiledZombieCells,
+        Result:FAVACC.BoiledZombieCells,
         Time:70.0,
         OnCreate:FavGiveXP,
         Category:Health,
@@ -90,37 +14,40 @@ module FAVACCINE {
 
     recipe Create Crude Vaccine
     {
-        BoiledZombieCells=2,
+        FAVACC.BoiledZombieCells=2,
         WaterSaucepan;10,
         Pills=2,
-        Result:CrudeVaccine,
+        Result:FAVACC.CrudeVaccine,
         Time:150.0,
         Category:Health,
+        SkillRequired:Doctor=3,
         OnCreate:FavGiveXP,
     }
 
     recipe Create Simple Vaccine
     {
-        BoiledZombieCells=3,
+        FAVACC.BoiledZombieCells=3,
         WaterSaucepan;10,
         Pills=2,
         ComfreyCataplasm=1,
-        Result:ZombieVaccine,
+        Result:FAVACC.ZombieVaccine,
         Time:170.0,
         Category:Health,
+        SkillRequired:Doctor=5,
         OnCreate:FavGiveXP,
     }
 
     recipe Create Effective Vaccine
     {
-        BoiledZombieCells=4,
+        FAVACC.BoiledZombieCells=4,
         WaterSaucepan;10,
         Pills=2,
         ComfreyCataplasm=1,
         PillsAntiDep=2,
-        Result:PerfectedZombieVaccine,
+        Result:FAVACC.PerfectedZombieVaccine,
         Time:200.0,
         Category:Health,
+        SkillRequired:Doctor=8,
         OnCreate:FavGiveXP,
     }
 

@@ -34,7 +34,7 @@ function VaccineFunction(player)
 
         if (mod_data.current_vaccine_level)/72 > random_number
         then
-            print("Healing Infection")
+            player:Say(getText("UI_BFA_Learning_No_More_Dissect"))
             player:getBodyDamage():setInfected(false)
             player:getBodyDamage():setInfectionLevel(0.0)
         end
@@ -61,7 +61,6 @@ function SetVaccine(player, items)
 
     mod_data = player:getModData()
 
-    print(items:getName())
 
     if items:getName() == 'Boiled Zombie Cells'
     then
@@ -124,7 +123,7 @@ function ConsumeVaccine(items, player, result)
 end
 
 function FavGiveXP(item, recipe, player)
-    player:getXp():AddXP(Perks.Doctor, 4)
+    player:getXp():AddXP(Perks.Doctor, 12)
 end
 
 function PrintStuff()

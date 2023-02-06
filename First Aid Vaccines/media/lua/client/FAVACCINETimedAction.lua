@@ -2,6 +2,38 @@
 require("TimedActions/ISBaseTimedAction")
 require "XpSystem/XpUpdate"
 
+local Utils = {}
+
+
+local extractionTools = {"KitchenKnife", "HuntingKnife", "Scalpel", "FlintKnife"}
+local properExtractionTools = {"Scalpel", nil}
+
+function Utils.has_value (tab, val)
+    for index, value in ipairs(tab) do
+        if value == val then
+            return true
+        end
+    end
+
+    return false
+end
+
+function Utils.IsExtractionTool(item)
+    return Utils.has_value(extractionTools, item:getType())
+end
+
+function Utils.IsProperTool(item)
+    return Utils.has_value(properExtractionTools, item:getType())
+end
+
+function Utils.DamageTool(item, player)
+    if not Utils.IsProperTool(item) then
+        item:setCondition(item:getCondition() - 0.001);
+    end
+end
+
+
+
 
 FAVExtractTimedAction = ISBaseTimedAction:derive("FAVExtractTimedAction")
 
@@ -25,10 +57,17 @@ function FAVExtractTimedAction:stop() -- Trigger if the action is cancel
 end
 
 function FAVExtractTimedAction:perform()
-    self.character:getXp():AddXP(Perks.Doctor, (5 + ZombRand(5)))
+    self.character:getXp():AddXP(Perks.Doctor, (2 + ZombRand(4)))
 
-    if ZombRand(21) < self.character:getPerkLevel(Perks.Doctor) then
+    if ZombRand(25) < self.character:getPerkLevel(Perks.Doctor) + 5 then
         self.character:getInventory():AddItem('FAVACC.LooseZombieCells')        
+    end
+
+    if not Utils.IsProperTool(self.extractionTool) then
+        if int(self.character:getPerkLevel(Perks.Maintenance)/2) + 94 < ZombRand(100) then
+            self.character:Say(getText("UI_BFA_Learning_No_More_Dissect"))
+            Utils.DamageTool(self.extractionTool, self.character)
+        end
     end
 
     self.corpse:getSquare():removeCorpse(self.corpse, false)

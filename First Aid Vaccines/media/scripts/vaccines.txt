@@ -1,7 +1,5 @@
 module FAVACC {
-    imports {
-        Base
-    }
+
     item LooseZombieCells
 {
     DisplayCategory = FirstAid,

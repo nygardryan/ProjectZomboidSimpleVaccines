@@ -3,7 +3,7 @@ local FAVExtract = {}
 local FAVCorpse = {}
 
 
-local extractionTools = {"KitchenKnife", "HuntingKnife", "Scalpel"}
+local extractionTools = {"KitchenKnife", "HuntingKnife", "Scalpel", "FlintKnife"}
 local properExtractionTools = {"Scalpel", nil}
 
 local function has_value (tab, val)
@@ -26,7 +26,7 @@ end
 
 function FAVExtract.DamageTool(item, player)
     if not FAVExtract.IsProperTool(item) then
-        item:setCondition(item:getCondition() - 1);
+        item:setCondition(item:getCondition() - 0.01);
     end
 end
 
@@ -42,7 +42,7 @@ FAVExtract.doMenu = function (player, context, worldobjects, test)
     local extractionTool = playerInv:getFirstEvalRecurse(FAVExtract.IsExtractionTool)
 
     if extractionTool then
-		context:addOption(getText("FAV_UI_EXTRACT_DNA"), worldobjects, FAVExtract.doAction, player);
+		context:addOption(getText("UI_BFA_Scalpel_Better"), worldobjects, FAVExtract.doAction, player);
 	end
 	return
 end
@@ -57,9 +57,6 @@ FAVExtract.doAction = function (worldobjects, player)
         ISInventoryPaneContextMenu.equipWeapon(extractionTool, true, false, playerObj:getPlayerNum());
         ISTimedActionQueue.add(FAVExtractTimedAction:new(playerObj, extractionTool, FAVCorpse.corpse));
 
-        if not FAVExtract.IsProperTool(extractionTool) then
-        	FAVExtract.DamageTool(extractionTool, playerObj)
-        end
     end
 	
 end
