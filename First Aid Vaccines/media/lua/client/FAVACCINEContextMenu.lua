@@ -42,7 +42,7 @@ FAVExtract.doMenu = function (player, context, worldobjects, test)
     local extractionTool = playerInv:getFirstEvalRecurse(FAVExtract.IsExtractionTool)
 
     if extractionTool then
-		context:addOption(getText("UI_BFA_Scalpel_Better"), worldobjects, FAVExtract.doAction, player);
+		context:addOption(getText("UI_FAV_Extract"), worldobjects, FAVExtract.doAction, player);
 	end
 	return
 end

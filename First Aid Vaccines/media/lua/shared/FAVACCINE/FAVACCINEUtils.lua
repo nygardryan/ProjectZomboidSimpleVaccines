@@ -34,13 +34,27 @@ function VaccineFunction(player)
 
         if (mod_data.current_vaccine_level)/72 > random_number
         then
-            player:Say(getText("UI_BFA_Learning_No_More_Dissect"))
+            player:Say(getText("UI_FAV_Cured"))
             player:getBodyDamage():setInfected(false)
             player:getBodyDamage():setInfectionLevel(0.0)
         end
     end
 
 end
+
+local function getSingleVsOnlinePlayer()
+    local players = getOnlinePlayers();
+
+    if players
+    then
+        for i = 0, players:size()-1 do
+            players:get(i);
+        end
+    else
+        return getSpecificPlayer(0)
+    end
+end
+
 
 function IncrementVaccine()
 

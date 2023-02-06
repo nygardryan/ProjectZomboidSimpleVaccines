@@ -1,14 +1,7 @@
 UI_EN = {
 
---UI_BFA
-UI_BFA_Scalpel_Better = "Attempt to Extract DNA"
-UI_BFA_Dissect_Corpse = "Dissect Corpse"
-UI_BFA_Basic_First_Aid = "Practice Basic First Aid"
-
---UI_BFA_Learning
-UI_BFA_Learning_No_More_Dissect = "You have Recovered from the Zombie Virus"
-UI_BFA_Learning_Not_Yet_Basic = "I don't know how to do this yet, I should practice Dissecting first"
-UI_BFA_Learning_No_More_Basic = "I learned all I can from Basic First Aid, time to find sutures!"
-
-
+--UI_FAV
+UI_FAV_Test = "TESTING"
+UI_FAV_Cured = "You have Successfully Recovered from the Zombie Virus"
+UI_FAV_Extract = "Attempt to Extract DNA"
 }

@@ -1,12 +1,18 @@
-module FAVACCINE {
+module FAVACCINE
+{
+
+    imports
+    {
+        Base,
+    }
 
     recipe Boil Zombie Cells 
     {   
-        FAVACC.LooseZombieCells=1,
+        FAVACCINE.LooseZombieCells=1,
         WaterSaucepan;10,
         CanBeDoneFromFloor:true,
         Heat:-0.22,
-        Result:FAVACC.BoiledZombieCells,
+        Result:FAVACCINE.BoiledZombieCells,
         Time:70.0,
         OnCreate:FavGiveXP,
         Category:Health,
@@ -14,10 +20,10 @@ module FAVACCINE {
 
     recipe Create Crude Vaccine
     {
-        FAVACC.BoiledZombieCells=2,
+        FAVACCINE.BoiledZombieCells=2,
         WaterSaucepan;10,
         Pills=2,
-        Result:FAVACC.CrudeVaccine,
+        Result:FAVACCINE.CrudeVaccine,
         Time:150.0,
         Category:Health,
         SkillRequired:Doctor=3,
@@ -26,11 +32,11 @@ module FAVACCINE {
 
     recipe Create Simple Vaccine
     {
-        FAVACC.BoiledZombieCells=3,
+        FAVACCINE.BoiledZombieCells=3,
         WaterSaucepan;10,
         Pills=2,
         ComfreyCataplasm=1,
-        Result:FAVACC.ZombieVaccine,
+        Result:FAVACCINE.ZombieVaccine,
         Time:170.0,
         Category:Health,
         SkillRequired:Doctor=5,
@@ -39,12 +45,12 @@ module FAVACCINE {
 
     recipe Create Effective Vaccine
     {
-        FAVACC.BoiledZombieCells=4,
+        FAVACCINE.BoiledZombieCells=4,
         WaterSaucepan;10,
         Pills=2,
         ComfreyCataplasm=1,
         PillsAntiDep=2,
-        Result:FAVACC.PerfectedZombieVaccine,
+        Result:FAVACCINE.PerfectedZombieVaccine,
         Time:200.0,
         Category:Health,
         SkillRequired:Doctor=8,

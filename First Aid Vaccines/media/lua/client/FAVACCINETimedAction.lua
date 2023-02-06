@@ -64,8 +64,7 @@ function FAVExtractTimedAction:perform()
     end
 
     if not Utils.IsProperTool(self.extractionTool) then
-        if int(self.character:getPerkLevel(Perks.Maintenance)/2) + 94 < ZombRand(100) then
-            self.character:Say(getText("UI_BFA_Learning_No_More_Dissect"))
+        if self.character:getPerkLevel(Perks.Maintenance)/2 + 94 < ZombRand(100) then
             Utils.DamageTool(self.extractionTool, self.character)
         end
     end
