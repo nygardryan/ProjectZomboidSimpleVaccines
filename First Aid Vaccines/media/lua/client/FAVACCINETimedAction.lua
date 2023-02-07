@@ -60,7 +60,7 @@ function FAVExtractTimedAction:perform()
     self.character:getXp():AddXP(Perks.Doctor, (2 + ZombRand(4)))
 
     if ZombRand(25) < self.character:getPerkLevel(Perks.Doctor) + 5 then
-        self.character:getInventory():AddItem('FAVACC.LooseZombieCells')        
+        self.character:getInventory():AddItem('FAVACCINE.LooseZombieCells')        
     end
 
     if not Utils.IsProperTool(self.extractionTool) then
