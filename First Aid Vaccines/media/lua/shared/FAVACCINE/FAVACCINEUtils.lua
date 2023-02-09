@@ -1,6 +1,15 @@
 --require "XpSystem/XpUpdate"
 
 
+if getActivatedMods():contains("MoodleFramework") == true then
+    require("MF_ISMoodle");
+    print("********************************************")
+    print(MF)
+    print("********************************************")
+    MF.createMoodle("vaccine_moodle");
+end
+
+isMoodleFrameWorkEnabled = getActivatedMods():contains("MoodleFramework");
 
 vaccine_increment_amt = 0.0001
 
@@ -12,11 +21,16 @@ function VaccineFunction(player)
     if mod_data.vac_increasing == 1
     then
         mod_data.current_vaccine_level = mod_data.current_vaccine_level + (mod_data.vaccine_power/168)
+        MF.getMoodle("vaccine_moodle"):setValue(0.8);
+        MF.getMoodle("vaccine_moodle"):setChevronIsUp(true);
     elseif mod_data.current_vaccine_level > 0
     then
         mod_data.current_vaccine_level = mod_data.current_vaccine_level - (mod_data.vaccine_power/900)
+        MF.getMoodle("vaccine_moodle"):setValue(0.2)
+        MF.getMoodle("vaccine_moodle"):setChevronIsUp(false);
     else
         mod_data.current_vaccine_level = 0
+        MF.getMoodle("vaccine_moodle"):setValue(0.0)
     end
 
     if mod_data.current_vaccine_level > mod_data.vaccine_power

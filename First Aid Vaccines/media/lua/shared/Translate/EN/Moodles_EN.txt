@@ -1,0 +1,18 @@
+Moodles_EN {
+    Moodles_vaccine_moodle_Good_lvl1 = "text_1",
+    Moodles_vaccine_moodle_Good_desc_lvl1 = "text_desc_1",
+    Moodles_vaccine_moodle_Good_lvl2 = "text_2",
+    Moodles_vaccine_moodle_Good_desc_lvl2 = "text_desc_2",
+    Moodles_vaccine_moodle_Good_lvl3 = "text_3",
+    Moodles_vaccine_moodle_Good_desc_lvl3 = "text_desc_3",
+    Moodles_vaccine_moodle_Good_lvl4 = "text_4",
+    Moodles_vaccine_moodle_Good_desc_lvl4 = "text_desc_4",
+    Moodles_vaccine_moodle_Bad_lvl1 = "text_1",
+    Moodles_vaccine_moodle_Bad_desc_lvl1 = "text_desc_1",
+    Moodles_vaccine_moodle_Bad_lvl2 = "text_2",
+    Moodles_vaccine_moodle_Bad_desc_lvl2 = "text_desc_2",
+    Moodles_vaccine_moodle_Bad_lvl3 = "text_3",
+    Moodles_vaccine_moodle_Bad_desc_lvl3 = "text_desc_3",
+    Moodles_vaccine_moodle_Bad_lvl4 = "text_4",
+    Moodles_vaccine_moodle_Bad_desc_lvl4 = "text_desc_4",
+}
