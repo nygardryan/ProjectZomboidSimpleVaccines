@@ -1,7 +1,6 @@
 --require "XpSystem/XpUpdate"
 
 
-
 vaccine_increment_amt = 0.0001
 
 function VaccineFunction(player)
