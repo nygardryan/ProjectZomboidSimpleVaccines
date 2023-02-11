@@ -8,7 +8,8 @@ isMoodleFrameWorkEnabled = getActivatedMods():contains("MoodleFramework");
 vaccine_increment_amt = 0.0001
 
 function FAVVaccineMoodlePlayers()
-        local players = getOnlinePlayers();
+    print("THIS!!")
+    local players = getOnlinePlayers();
 
     if players
     then
@@ -21,28 +22,39 @@ function FAVVaccineMoodlePlayers()
 end
 
 function FAVVaccineMoodleFunction(player)
-    -- InitializeTable(player)
+    InitializeTable(player)
 
-    -- mod_data = player:getModData()
+    mod_data = player:getModData()
 
-    print(getActivatedMods())
+    print("***************************")
+    print(mod_data.vac_increasing)
+
+    print(mod_data.vaccine_power)
+
+    print(isMoodleFrameWorkEnabled)
+    print("HERE")
 
     if isMoodleFrameWorkEnabled
     then
-        MF.getMoodle("vaccine_moodle"):setValue(0.8);
-        MF.getMoodle("vaccine_moodle"):setChevronIsUp(true);
+        if mod_data.current_vaccine_level > (mod_data.vaccine_power * 0.7)
+        then
+            MF.getMoodle("vaccine_moodle"):setValue(0.8);   
+            if mod_data.vac_increasing == 1
+                then
+                    MF.getMoodle("vaccine_moodle"):setChevronIsUp(true);
+                else
+                    MF.getMoodle("vaccine_moodle"):setChevronIsUp(false);
+                end
+            
+
+        elseif mod_data.current_vaccine_level =< 0
+        then
+            MF.getMoodle("vaccine_moodle"):setValue(0.2)
+            MF.getMoodle("vaccine_moodle"):setChevronIsUp(false);
+        else
+            MF.getMoodle("vaccine_moodle"):setValue(0.5)
+        end
     end
-    -- if mod_data.vac_increasing == 1
-    -- then
-    --     MF.getMoodle("vaccine_moodle"):setValue(0.8);
-    --     MF.getMoodle("vaccine_moodle"):setChevronIsUp(true);
-    -- elseif mod_data.current_vaccine_level > 0
-    -- then
-    --     MF.getMoodle("vaccine_moodle"):setValue(0.2)
-    --     MF.getMoodle("vaccine_moodle"):setChevronIsUp(false);
-    -- else
-    --     MF.getMoodle("vaccine_moodle"):setValue(0.0)
-    -- end
 
 end
 

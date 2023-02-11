@@ -42,7 +42,10 @@ FAVExtract.doMenu = function (player, context, worldobjects, test)
     local extractionTool = playerInv:getFirstEvalRecurse(FAVExtract.IsExtractionTool)
 
     if extractionTool then
-		context:addOption(getText("UI_FAV_Extract"), worldobjects, FAVExtract.doAction, player);
+        if extractionTool:getCondition() > 0
+            then
+		      context:addOption(getText("UI_FAV_Extract"), worldobjects, FAVExtract.doAction, player);
+            end
 	end
 	return
 end

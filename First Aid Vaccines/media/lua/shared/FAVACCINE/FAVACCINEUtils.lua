@@ -23,9 +23,9 @@ function VaccineFunction(player)
         mod_data.vac_increasing = 0
     end
 
-    print("Player Infected")
-    print(player:getBodyDamage():IsInfected())
-    print(mod_data.current_vaccine_level)
+    -- print("Player Infected")
+    -- print(player:getBodyDamage():IsInfected())
+    -- print(mod_data.current_vaccine_level)
 
     if player:getBodyDamage():IsInfected()
     then

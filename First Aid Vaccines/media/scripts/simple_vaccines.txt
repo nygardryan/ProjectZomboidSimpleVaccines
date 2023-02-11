@@ -22,6 +22,7 @@ module FAVACCINE {
         PoisonPower = 4,
         UseForPoison = 5,
         onEat = ConsumeVaccine,
+        WorldStaticModel = petri_dish,
     }
 
 
@@ -41,6 +42,7 @@ module FAVACCINE {
         PoisonDetectionLevel = 200,
         PoisonPower = 4,
         onEat = ConsumeVaccine,
+        WorldStaticModel = petri_dish,
     }
 
     item CrudeVaccine 
