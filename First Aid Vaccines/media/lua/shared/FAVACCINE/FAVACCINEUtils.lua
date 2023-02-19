@@ -1,12 +1,12 @@
 --require "XpSystem/XpUpdate"
 
-
+FAVUtils = {}
 
 vaccine_increment_amt = 0.0001
 
-function VaccineFunction(player)
+function FAVUtils.VaccineFunction(player)
 
-    InitializeTable(player)
+    FAVUtils.InitializeTable(player)
     mod_data = player:getModData()
 
     if mod_data.vac_increasing == 1
@@ -24,9 +24,9 @@ function VaccineFunction(player)
         mod_data.vac_increasing = 0
     end
 
-    print("Player Infected")
-    print(player:getBodyDamage():IsInfected())
-    print(mod_data.current_vaccine_level)
+    -- print("Player Infected")
+    -- print(player:getBodyDamage():IsInfected())
+    -- print(mod_data.current_vaccine_level)
 
     if player:getBodyDamage():IsInfected()
     then
@@ -42,36 +42,27 @@ function VaccineFunction(player)
 
 end
 
-local function getSingleVsOnlinePlayer()
+function FAVUtils.getSingleVsOnlinePlayer(func)
     local players = getOnlinePlayers();
 
     if players
     then
         for i = 0, players:size()-1 do
-            players:get(i);
+            func(players:get(i));
         end
     else
-        return getSpecificPlayer(0)
+        return func(getSpecificPlayer(0))
     end
 end
 
 
-function IncrementVaccine()
-
-    local players = getOnlinePlayers();
-
-    if players
-    then
-        for i = 0, players:size()-1 do
-            VaccineFunction(players:get(i));
-        end
-    else
-        VaccineFunction(getSpecificPlayer(0))
-    end
+function FAVUtils.IncrementVaccine()
+    print("FAVUtils!!")
+    FAVUtils.getSingleVsOnlinePlayer(FAVUtils.VaccineFunction)
 end
 
 function SetVaccine(player, items)
-    InitializeTable(player)
+    FAVUtils.InitializeTable(player)
 
     mod_data = player:getModData()
 
@@ -113,7 +104,7 @@ end
 --print(player:getBodyDamage():IsInfected())
 --print(player:getBodyDamage():getInfectionLevel())
 
-function InitializeTable(player)
+function FAVUtils.InitializeTable(player)
     mod_data = player:getModData()
 
     if not mod_data.vac_increasing
@@ -153,7 +144,7 @@ end
 
 --Events.EveryOneMinute.Add(IncrementVaccine)
 
-Events.EveryHours.Add(IncrementVaccine)
+Events.EveryHours.Add(FAVUtils.IncrementVaccine)
 
 
 --EveryHours and EveryDays

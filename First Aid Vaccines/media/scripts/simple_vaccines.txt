@@ -22,6 +22,7 @@ module FAVACCINE {
         PoisonPower = 4,
         UseForPoison = 5,
         onEat = ConsumeVaccine,
+        WorldStaticModel = PetriDish,
     }
 
 
@@ -35,12 +36,13 @@ module FAVACCINE {
         Icon    =   Antibiotics,
         CustomContextMenu   =   Take,
         CantBeFrozen = TRUE,
-        Tooltip = Zombie Cells Boiled for Saftety provides some natural immunity,
+        Tooltip = UI_FAV_BOILED,
         Medical = TRUE,
         WorldStaticModel = Antibiotics,
         PoisonDetectionLevel = 200,
         PoisonPower = 4,
         onEat = ConsumeVaccine,
+        WorldStaticModel = PetriDish,
     }
 
     item CrudeVaccine 
@@ -52,7 +54,7 @@ module FAVACCINE {
         Icon    =   Antibiotics,
         CustomContextMenu   =   Take,
         CantBeFrozen = TRUE,
-        Tooltip = A Crude Vaccine for the zombie virus provides some immunity,
+        Tooltip = UI_FAV_CRUDE,
         Medical = TRUE,
         WorldStaticModel = Antibiotics,
         onEat = ConsumeVaccine,
@@ -68,7 +70,7 @@ module FAVACCINE {
         CustomContextMenu   =   Take,
         CantBeFrozen = TRUE,
         onEat = ConsumeVaccine,
-        Tooltip = A Vaccine for the zombie virus, provides good resistance to the zombie virus,
+        Tooltip = UI_FAV_NORMAL,
         Medical = TRUE,
         WorldStaticModel = Antibiotics,
     }
@@ -83,7 +85,7 @@ module FAVACCINE {
         CustomContextMenu   =   Take,
         CantBeFrozen = TRUE,
         onEat = ConsumeVaccine,
-        Tooltip = A Vaccine for the zombie virus, provides considerable resistance to the zombie virus,
+        Tooltip = UI_FAV_PERFECT,
         Medical = TRUE,
         WorldStaticModel = Antibiotics,
     }

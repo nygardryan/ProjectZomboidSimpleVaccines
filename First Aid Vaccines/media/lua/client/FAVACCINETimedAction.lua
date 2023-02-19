@@ -1,6 +1,6 @@
 
 require("TimedActions/ISBaseTimedAction")
-require "XpSystem/XpUpdate"
+require ("XpSystem/XpUpdate")
 
 local Utils = {}
 

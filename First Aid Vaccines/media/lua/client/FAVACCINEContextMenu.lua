@@ -24,6 +24,19 @@ function FAVExtract.IsProperTool(item)
     return has_value(properExtractionTools, item:getType())
 end
 
+function FAVExtract.ToolConditionGood(item)
+    if item:getCondition() > 0
+    then
+        return true
+    else
+        return false
+    end
+end
+
+function FAVExtract.FindExtractionTool(item)
+    return FAVExtract.IsExtractionTool(item) and FAVExtract.ToolConditionGood(item)
+end
+
 function FAVExtract.DamageTool(item, player)
     if not FAVExtract.IsProperTool(item) then
         item:setCondition(item:getCondition() - 0.01);
@@ -39,10 +52,25 @@ FAVExtract.doMenu = function (player, context, worldobjects, test)
 
     local playerObj = getSpecificPlayer(player)
     local playerInv = playerObj:getInventory()
-    local extractionTool = playerInv:getFirstEvalRecurse(FAVExtract.IsExtractionTool)
+
+    local extractionTool = nil
+    local proper_extraction_tool = playerInv:getFirstEvalRecurse(FAVExtract.IsProperTool)
+
+    if proper_extraction_tool
+        then
+            if FAVExtract.ToolConditionGood(proper_extraction_tool)
+            then
+                extractionTool = proper_extraction_tool
+            end
+    end
+    
+    if not extractionTool
+        then
+        extractionTool = playerInv:getFirstEvalRecurse(FAVExtract.FindExtractionTool)
+    end
 
     if extractionTool then
-		context:addOption(getText("UI_FAV_Extract"), worldobjects, FAVExtract.doAction, player);
+		context:addOption(getText("UI_FAV_Extract"), worldobjects, FAVExtract.doAction, player);    
 	end
 	return
 end
@@ -51,7 +79,20 @@ FAVExtract.doAction = function (worldobjects, player)
 	local playerObj = getSpecificPlayer(player)
     local playerInv = playerObj:getInventory()
     local equipped = playerObj:getPrimaryHandItem()
-    local extractionTool = playerInv:getFirstEvalRecurse(FAVExtract.IsExtractionTool)
+
+    local proper_extraction_tool = playerInv:getFirstEvalRecurse(FAVExtract.IsProperTool)
+    if proper_extraction_tool
+        then
+            if FAVExtract.ToolConditionGood(proper_extraction_tool)
+            then
+                extractionTool = proper_extraction_tool
+            end
+    end
+    
+    if not extractionTool
+        then
+        extractionTool = playerInv:getFirstEvalRecurse(FAVExtract.FindExtractionTool)
+    end
 
      if FAVCorpse.corpse:getSquare() and extractionTool and luautils.walkAdj(playerObj, FAVCorpse.corpse:getSquare()) then
         ISInventoryPaneContextMenu.equipWeapon(extractionTool, true, false, playerObj:getPlayerNum());
