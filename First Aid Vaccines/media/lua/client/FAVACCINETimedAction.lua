@@ -57,7 +57,7 @@ function FAVExtractTimedAction:stop() -- Trigger if the action is cancel
 end
 
 function FAVExtractTimedAction:perform()
-    self.character:getXp():AddXP(Perks.Doctor, (2 + ZombRand(4)))
+    self.character:getXp():AddXP(Perks.Doctor, (2 + ZombRand(6)))
 
     if ZombRand(25) < self.character:getPerkLevel(Perks.Doctor) + 5 then
         self.character:getInventory():AddItem('FAVACCINE.LooseZombieCells')        

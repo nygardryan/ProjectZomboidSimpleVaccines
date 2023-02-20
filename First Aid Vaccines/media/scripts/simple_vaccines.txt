@@ -12,17 +12,16 @@ module FAVACCINE {
         Type    =   Food,
         DisplayName =   Zombie Cells,
         Icon    =   Antibiotics,
+        WorldStaticModel = PetriDish,
         CustomContextMenu   =   Take,
         CantBeFrozen = TRUE,
         Tooltip = Tooltip_Antibiotics,
         Medical = TRUE,
-        WorldStaticModel = Antibiotics,
         Poison = true,
         PoisonDetectionLevel = 200,
         PoisonPower = 4,
         UseForPoison = 5,
         onEat = ConsumeVaccine,
-        WorldStaticModel = PetriDish,
     }
 
 
@@ -38,11 +37,10 @@ module FAVACCINE {
         CantBeFrozen = TRUE,
         Tooltip = UI_FAV_BOILED,
         Medical = TRUE,
-        WorldStaticModel = Antibiotics,
+        WorldStaticModel = PetriDish,
         PoisonDetectionLevel = 200,
         PoisonPower = 4,
         onEat = ConsumeVaccine,
-        WorldStaticModel = PetriDish,
     }
 
     item CrudeVaccine 
@@ -51,12 +49,12 @@ module FAVACCINE {
         Weight  =   0.1,
         Type    =   Food,
         DisplayName =   Crude Vaccine,
-        Icon    =   Antibiotics,
+        Icon    =   VaccineGreen1Small,
         CustomContextMenu   =   Take,
         CantBeFrozen = TRUE,
         Tooltip = UI_FAV_CRUDE,
         Medical = TRUE,
-        WorldStaticModel = Antibiotics,
+        WorldStaticModel = VaccineGreen1Small,
         onEat = ConsumeVaccine,
     }
 
@@ -66,13 +64,12 @@ module FAVACCINE {
         Weight  =   0.1,
         Type    =   Food,
         DisplayName =  Zombie Vaccine,
-        Icon    =   Antibiotics,
+        Icon    =   VaccinePurple1Small,
         CustomContextMenu   =   Take,
         CantBeFrozen = TRUE,
         onEat = ConsumeVaccine,
         Tooltip = UI_FAV_NORMAL,
         Medical = TRUE,
-        WorldStaticModel = Antibiotics,
     }
 
     item PerfectedZombieVaccine 
@@ -81,13 +78,12 @@ module FAVACCINE {
         Weight  =   0.1,
         Type    =   Food,
         DisplayName = Perfect Zombie Vaccine,
-        Icon    =   Antibiotics,
+        Icon    =   VaccineYellow1Small,
         CustomContextMenu   =   Take,
         CantBeFrozen = TRUE,
         onEat = ConsumeVaccine,
         Tooltip = UI_FAV_PERFECT,
         Medical = TRUE,
-        WorldStaticModel = Antibiotics,
     }
 
 }

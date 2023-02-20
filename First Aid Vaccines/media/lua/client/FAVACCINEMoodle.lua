@@ -1,6 +1,6 @@
 if getActivatedMods():contains("MoodleFramework") == true then
     require("MF_ISMoodle");
-    MF.createMoodle("vaccine_moodle");
+    MF.createMoodle("vaccine_moodle_2");
 end
 
 isMoodleFrameWorkEnabled = getActivatedMods():contains("MoodleFramework");
@@ -29,21 +29,21 @@ function FAVVaccineMoodleFunction(player)
     then
         if mod_data.current_vaccine_level > (mod_data.vaccine_power * 0.7)
         then
-            MF.getMoodle("vaccine_moodle"):setValue(0.6);   
+            MF.getMoodle("vaccine_moodle_2"):setValue(0.6);   
             if mod_data.vac_increasing == 1
             then
-                    MF.getMoodle("vaccine_moodle"):setChevronIsUp(true);
+                    MF.getMoodle("vaccine_moodle_2"):setChevronIsUp(true);
             else
-                    MF.getMoodle("vaccine_moodle"):setChevronIsUp(false);
+                    MF.getMoodle("vaccine_moodle_2"):setChevronIsUp(false);
             end
             
 
         elseif mod_data.current_vaccine_level <= 0
         then
-            MF.getMoodle("vaccine_moodle"):setValue(0.4)
-            MF.getMoodle("vaccine_moodle"):setChevronIsUp(false);
+            MF.getMoodle("vaccine_moodle_2"):setValue(0.4)
+            MF.getMoodle("vaccine_moodle_2"):setChevronIsUp(false);
         else
-            MF.getMoodle("vaccine_moodle"):setValue(0.5)
+            MF.getMoodle("vaccine_moodle_2"):setValue(0.5)
         end
     end
 

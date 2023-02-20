@@ -24,19 +24,29 @@ function FAVUtils.VaccineFunction(player)
         mod_data.vac_increasing = 0
     end
 
-    -- print("Player Infected")
-    -- print(player:getBodyDamage():IsInfected())
-    -- print(mod_data.current_vaccine_level)
-
-    if player:getBodyDamage():IsInfected()
+    print("Player Infected")
+    print(player:getBodyDamage():IsInfected())
+    print(mod_data.current_vaccine_level)
+    local bodyDamage = player:getBodyDamage();
+    if bodyDamage:IsInfected()
     then
         local random_number = ZombRand(101)
 
+        -- if (mod_data.current_vaccine_level)/72 > 0
         if (mod_data.current_vaccine_level)/72 > random_number
         then
-            player:Say(getText("UI_FAV_Cured"))
-            player:getBodyDamage():setInfected(false)
-            player:getBodyDamage():setInfectionLevel(0.0)
+            
+            bodyDamage:setInfected(false);
+            bodyDamage:setInfectionMortalityDuration(-1);
+            bodyDamage:setInfectionTime(-1);
+            bodyDamage:setInfectionLevel(0);
+            local bodyParts = bodyDamage:getBodyParts();
+            for i=bodyParts:size()-1, 0, -1  do
+                local bodyPart = bodyParts:get(i);
+                bodyPart:SetInfected(false);
+            end
+            bodyDamage:setInfected(false);
+            bodyDamage:setInfectionLevel(0);
         end
     end
 
@@ -57,7 +67,6 @@ end
 
 
 function FAVUtils.IncrementVaccine()
-    print("FAVUtils!!")
     FAVUtils.getSingleVsOnlinePlayer(FAVUtils.VaccineFunction)
 end
 
@@ -69,26 +78,26 @@ function SetVaccine(player, items)
 
     if items:getName() == 'Boiled Zombie Cells'
     then
-        print('Vaccine Power set to 12')
-        mod_data.vaccine_power = 12
+        print('Vaccine Power set to 20')
+        mod_data.vaccine_power = 15
     end
 
     if items:getName() == 'Crude Vaccine'
     then
-        print('Vaccine Power set to 25')
-        mod_data.vaccine_power = 25
+        print('Vaccine Power set to 35')
+        mod_data.vaccine_power = 35
     end
 
     if items:getName() == 'Zombie Vaccine'
     then
-        print('Vaccine Power set to 50')
-        mod_data.vaccine_power = 50
+        print('Vaccine Power set to 60')
+        mod_data.vaccine_power = 60
     end
 
     if items:getName() == 'Perfect Zombie Vaccine'
     then
-        print('Vaccine Power set to 100')
-        mod_data.vaccine_power = 100
+        print('Vaccine Power set to 95')
+        mod_data.vaccine_power = 95
     end
 
     if mod_data.current_vaccine_level < mod_data.vaccine_power
