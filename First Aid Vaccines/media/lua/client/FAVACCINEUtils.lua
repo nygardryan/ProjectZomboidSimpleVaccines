@@ -24,16 +24,14 @@ function FAVUtils.VaccineFunction(player)
         mod_data.vac_increasing = 0
     end
 
-    print("Player Infected")
-    print(player:getBodyDamage():IsInfected())
-    print(mod_data.current_vaccine_level)
+
     local bodyDamage = player:getBodyDamage();
     if bodyDamage:IsInfected()
     then
         local random_number = ZombRand(101)
 
         -- if (mod_data.current_vaccine_level)/72 > 0
-        if (mod_data.current_vaccine_level)/72 > random_number
+        if (mod_data.current_vaccine_level) > random_number and mod_data.cure_attempted == 0.0
         then
             
             bodyDamage:setInfected(false);
@@ -47,7 +45,12 @@ function FAVUtils.VaccineFunction(player)
             end
             bodyDamage:setInfected(false);
             bodyDamage:setInfectionLevel(0);
+            mod_data.cure_attempted = 0.0
+        else
+            mod_data.cure_attempted = 1.0
         end
+    else
+        mod_data.cure_attempted = 0.0
     end
 
 end
@@ -78,30 +81,31 @@ function SetVaccine(player, items)
 
     if items:getName() == 'Boiled Zombie Cells'
     then
-        print('Vaccine Power set to 20')
         mod_data.vaccine_power = 15
     end
 
     if items:getName() == 'Crude Vaccine'
     then
-        print('Vaccine Power set to 35')
         mod_data.vaccine_power = 35
     end
 
     if items:getName() == 'Zombie Vaccine'
     then
-        print('Vaccine Power set to 60')
         mod_data.vaccine_power = 60
     end
 
     if items:getName() == 'Perfect Zombie Vaccine'
     then
-        print('Vaccine Power set to 95')
         mod_data.vaccine_power = 95
     end
 
     if mod_data.current_vaccine_level < mod_data.vaccine_power
     then
+        if isMoodleFrameWorkEnabled
+        then
+            MF.getMoodle("vaccine_moodle_2"):setValue(0.8)
+            MF.getMoodle("vaccine_moodle_2"):setChevronIsUp(true);
+        end
         mod_data.vac_increasing = 1
     end
     --player:setModData(mod_data)
@@ -129,6 +133,11 @@ function FAVUtils.InitializeTable(player)
     if not mod_data.current_vaccine_level
         then
         mod_data.current_vaccine_level = 0.0
+    end
+
+    if not mod_data.cure_attempted
+        then
+        mod_data.cure_attempted = 0.0
     end
 end
 
