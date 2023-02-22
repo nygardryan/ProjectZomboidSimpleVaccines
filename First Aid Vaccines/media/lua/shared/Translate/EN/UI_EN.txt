@@ -7,6 +7,7 @@ UI_FAV_Extract = "Attempt to Extract DNA"
 
 UI_FAV_PERFECT = "A Vaccine for the zombie virus, provides considerable resistance to the zombie virus"
 UI_FAV_NORMAL = "A Vaccine for the zombie virus, provides good resistance to the zombie virus"
-UI_FAV_CRUDE = "A Crude Vaccine for the zombie virus provides some immunity"
-UI_FAV_BOILED = "Zombie Cells Boiled for Saftety provides some natural immunity"
+UI_FAV_CRUDE = "A Crude Vaccine for the zombie virus, provides some immunity"
+UI_FAV_BOILED = "Zombie Cells Boiled for Safety, provides some natural immunity"
+UI_FAV_CELLS = "Zombie Cells, why would I want these?"
 }
