@@ -84,12 +84,12 @@ function SetVaccine(player, items)
         mod_data.vaccine_power = 15
     end
 
-    if items:getName() == 'Crude Vaccine'
+    if items:getName() == 'Crude Zombie Vaccine'
     then
         mod_data.vaccine_power = 35
     end
 
-    if items:getName() == 'Zombie Vaccine'
+    if items:getName() == 'Simple Zombie Vaccine'
     then
         mod_data.vaccine_power = 60
     end

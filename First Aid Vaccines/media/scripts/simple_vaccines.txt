@@ -9,7 +9,7 @@ module FAVACCINE {
     {
         DisplayCategory = FirstAid,
         Weight  =   0.1,
-        Type    =   Food,
+        Type    =   Medical,
         DisplayName =   Zombie Cells,
         Icon    =   RedCell1,
         CantBeFrozen = TRUE,
@@ -28,7 +28,7 @@ module FAVACCINE {
     {
         DisplayCategory = FirstAid,
         Weight  =   0.1,
-        Type    =   Food,
+        Type    =   Medical,
         DisplayName =   Boiled Zombie Cells,
         Icon    =   BoiledCell1,
         CustomContextMenu   =   Take,
@@ -42,8 +42,8 @@ module FAVACCINE {
     {
         DisplayCategory = FirstAid,
         Weight  =   0.1,
-        Type    =   Food,
-        DisplayName =   Crude Vaccine,
+        Type    =   Medical,
+        DisplayName =   Crude Zombie Vaccine, 
         Icon    =   VaccineGreen1Small,
         CustomContextMenu   =   Take,
         CantBeFrozen = TRUE,
@@ -56,8 +56,8 @@ module FAVACCINE {
     {
         DisplayCategory = FirstAid,
         Weight  =   0.1,
-        Type    =   Food,
-        DisplayName =  Zombie Vaccine,
+        Type    =   Medical,
+        DisplayName =  Simple Zombie Vaccine,
         Icon    =   VaccinePurple1Small,
         CustomContextMenu   =   Take,
         CantBeFrozen = TRUE,
@@ -70,7 +70,7 @@ module FAVACCINE {
     {
         DisplayCategory = FirstAid,
         Weight  =   0.1,
-        Type    =   Food,
+        Type    =   Medical,
         DisplayName = Perfect Zombie Vaccine,
         Icon    =   VaccineYellow1Small,
         CustomContextMenu   =   Take,

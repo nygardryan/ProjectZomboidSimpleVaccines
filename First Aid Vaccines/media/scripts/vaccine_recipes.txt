@@ -18,10 +18,10 @@ module FAVACCINE
         Category:Health,
     }
 
-    recipe Create Crude Vaccine
+    recipe Create Crude Zombie Vaccine
     {
         FAVACCINE.BoiledZombieCells=2,
-        WaterSaucepan;10,
+        WaterSaucepan;10/WaterPot;10,
         Pills=2,
         Result:FAVACCINE.CrudeVaccine,
         Time:150.0,
@@ -30,10 +30,10 @@ module FAVACCINE
         OnCreate:FavGiveXP,
     }
 
-    recipe Create Simple Vaccine
+    recipe Create Simple Zombie Vaccine
     {
         FAVACCINE.BoiledZombieCells=3,
-        WaterSaucepan;10,
+        WaterSaucepan;10/WaterPot;10,
         Pills=2,
         ComfreyCataplasm/WildGarlicCataplasm/PlantainCataplasm=1,
         Result:FAVACCINE.ZombieVaccine,
@@ -43,10 +43,10 @@ module FAVACCINE
         OnCreate:FavGiveXP,
     }
 
-    recipe Create Effective Vaccine
+    recipe Create Effective Zombie Vaccine
     {
         FAVACCINE.BoiledZombieCells=4,
-        WaterSaucepan;10,
+        WaterSaucepan;10/WaterPot;10,
         Pills=2,
         ComfreyCataplasm/WildGarlicCataplasm/PlantainCataplasm=1,
         PillsAntiDep=2,
