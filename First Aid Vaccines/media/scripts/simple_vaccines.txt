@@ -9,7 +9,7 @@ module FAVACCINE {
     {
         DisplayCategory = FirstAid,
         Weight  =   0.1,
-        Type    =   Medical,
+        Type    =   Normal,
         DisplayName =   Zombie Cells,
         Icon    =   RedCell1,
         CantBeFrozen = TRUE,
@@ -28,7 +28,7 @@ module FAVACCINE {
     {
         DisplayCategory = FirstAid,
         Weight  =   0.1,
-        Type    =   Medical,
+        Type    =   Food,
         DisplayName =   Boiled Zombie Cells,
         Icon    =   BoiledCell1,
         CustomContextMenu   =   Take,
@@ -42,7 +42,7 @@ module FAVACCINE {
     {
         DisplayCategory = FirstAid,
         Weight  =   0.1,
-        Type    =   Medical,
+        Type    =   Food,
         DisplayName =   Crude Zombie Vaccine, 
         Icon    =   VaccineGreen1Small,
         CustomContextMenu   =   Take,
@@ -56,7 +56,7 @@ module FAVACCINE {
     {
         DisplayCategory = FirstAid,
         Weight  =   0.1,
-        Type    =   Medical,
+        Type    =   Food,
         DisplayName =  Simple Zombie Vaccine,
         Icon    =   VaccinePurple1Small,
         CustomContextMenu   =   Take,
@@ -70,7 +70,7 @@ module FAVACCINE {
     {
         DisplayCategory = FirstAid,
         Weight  =   0.1,
-        Type    =   Medical,
+        Type    =   Food,
         DisplayName = Perfect Zombie Vaccine,
         Icon    =   VaccineYellow1Small,
         CustomContextMenu   =   Take,
@@ -78,6 +78,26 @@ module FAVACCINE {
         onEat = ConsumeVaccine,
         Tooltip = UI_FAV_PERFECT,
         Medical = TRUE,
+    }
+
+    item EmptySyringe
+    {
+        Weight = 0.1,
+        DisplayCategory = Material,
+        DisplayName = Empty Syringe,
+        Icon = SyringeEmpty1,
+        Tooltip = UI_FAV_SYRINGE,
+        Type = Normal,
+    }
+
+    item DirtySyringe
+    {
+        Weight = 0.1,
+        DisplayCategory = Material,
+        DisplayName = Dirty Syringe,
+        Icon = SyringeDirty1,
+        Tooltip = UI_FAV_DIRTY_SYRINGE,
+        Type = Normal,
     }
 
 }

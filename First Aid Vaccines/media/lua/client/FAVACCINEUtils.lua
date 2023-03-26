@@ -1,8 +1,11 @@
 --require "XpSystem/XpUpdate"
 
 FAVUtils = {}
+local syringeVaccines = {"KitchenKnife", "HuntingKnife", "Scalpel", "FlintKnife"}
 
 vaccine_increment_amt = 0.0001
+
+
 
 function FAVUtils.VaccineFunction(player)
 
@@ -87,28 +90,30 @@ function SetVaccine(player, items)
     if items:getName() == 'Crude Zombie Vaccine'
     then
         mod_data.vaccine_power = 35
+        player:getInventory():AddItem('FAVACCINE.DirtySyringe')
     end
 
     if items:getName() == 'Simple Zombie Vaccine'
     then
         mod_data.vaccine_power = 60
+        player:getInventory():AddItem('FAVACCINE.DirtySyringe')
     end
 
     if items:getName() == 'Perfect Zombie Vaccine'
     then
         mod_data.vaccine_power = 95
+        player:getInventory():AddItem('FAVACCINE.DirtySyringe')
     end
 
     if mod_data.current_vaccine_level < mod_data.vaccine_power
     then
-        if isMoodleFrameWorkEnabled
-        then
-            MF.getMoodle("vaccine_moodle_2"):setValue(0.8)
-            MF.getMoodle("vaccine_moodle_2"):setChevronIsUp(true);
-        end
+
         mod_data.vac_increasing = 1
     end
-    --player:setModData(mod_data)
+    if isMoodleFrameWorkEnabled
+        then
+        FAVVaccineMoodleFunction(player)
+    end
 end
 
 

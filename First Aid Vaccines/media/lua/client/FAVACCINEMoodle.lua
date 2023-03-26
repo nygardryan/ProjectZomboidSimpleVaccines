@@ -16,6 +16,8 @@ function FAVVaccineMoodleFunction(player)
 
     mod_data = player:getModData()
 
+    print("Moodle Framework Stuff")
+    print(getActivatedMods())
     print(mod_data.current_vaccine_level)
     print(mod_data.vaccine_power)
     print(mod_data.vac_increasing)

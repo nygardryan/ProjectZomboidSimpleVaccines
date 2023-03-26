@@ -5,7 +5,7 @@ Moodles_EN {
     Moodles_vaccine_moodle_2_Good_desc_lvl2 = "You have good Immunity",
     Moodles_vaccine_moodle_2_Good_lvl3 = "Immunity Increasing",
     Moodles_vaccine_moodle_2_Good_desc_lvl3 = "Your immunity to the virus is increasing",
-    Moodles_vaccine_moodle_2_Good_lvl4 = "Peak Immunity Level",
+    Moodles_vaccine_moodle_2_Good_lvl4 = "Peak Immunity",
     Moodles_vaccine_moodle_2_Good_desc_lvl4 = "You have Peak Immunity against the virus with your current vaccine",
     Moodles_vaccine_moodle_2_Bad_lvl1 = "No Immunity",
     Moodles_vaccine_moodle_2_Bad_desc_lvl1 = "You have no Immunity, Take a vaccine",

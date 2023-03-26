@@ -10,4 +10,6 @@ UI_FAV_NORMAL = "A Vaccine for the zombie virus, provides good resistance to the
 UI_FAV_CRUDE = "A Crude Vaccine for the zombie virus, provides some immunity"
 UI_FAV_BOILED = "Zombie Cells Boiled for Safety, provides some natural immunity"
 UI_FAV_CELLS = "Zombie Cells, why would I want these?"
+UI_FAV_SYRINGE = "An Empty Syringe"
+UI_FAV_DIRTY_SYRINGE = "A dirty syringe, it has been used by somebody"
 }
