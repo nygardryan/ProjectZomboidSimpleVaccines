@@ -25,19 +25,20 @@ table.insert(ProceduralDistributions.list["StoreShelfMedical"].items, 10);
 table.insert(ProceduralDistributions.list["ArmyStorageMedical"].items, "FAVACCINE.EmptySyringe");
 table.insert(ProceduralDistributions.list["ArmyStorageMedical"].items, 10);
 table.insert(ProceduralDistributions.list["BathroomCabinet"].items, "FAVACCINE.EmptySyringe");
-table.insert(ProceduralDistributions.list["BathroomCabinet"].items, 1);
+table.insert(ProceduralDistributions.list["BathroomCabinet"].items, 2);
 table.insert(ProceduralDistributions.list["BathroomCounter"].items, "FAVACCINE.EmptySyringe");
-table.insert(ProceduralDistributions.list["BathroomCounter"].items, 1);
+table.insert(ProceduralDistributions.list["BathroomCounter"].items, 2);
 table.insert(ProceduralDistributions.list["BathroomShelf"].items, "FAVACCINE.EmptySyringe");
-table.insert(ProceduralDistributions.list["BathroomShelf"].items, 1);
-
+table.insert(ProceduralDistributions.list["BathroomShelf"].items, 2);
+table.insert(ProceduralDistributions.list["HospitalLockers"].items, "FAVACCINE.EmptySyringe");
+table.insert(ProceduralDistributions.list["HospitalLockers"].items, 20);
 
 -- Dirty Syringe -- 
 table.insert(ProceduralDistributions.list["BinDumpster"].items, "FAVACCINE.DirtySyringe");
-table.insert(ProceduralDistributions.list["BinDumpster"].items, 10);
+table.insert(ProceduralDistributions.list["BinDumpster"].items, 20);
 table.insert(ProceduralDistributions.list["BinGeneric"].items, "FAVACCINE.DirtySyringe");
-table.insert(ProceduralDistributions.list["BinGeneric"].items, 3);
+table.insert(ProceduralDistributions.list["BinGeneric"].items, 4);
 table.insert(ProceduralDistributions.list["BinBar"].items, "FAVACCINE.DirtySyringe");
-table.insert(ProceduralDistributions.list["BinBar"].items, 4);
+table.insert(ProceduralDistributions.list["BinBar"].items, 5);
 table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, "FAVACCINE.DirtySyringe");
-table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, 3);
+table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, 4);
