@@ -17,7 +17,7 @@ function FAVUtils.VaccineFunction(player)
         mod_data.current_vaccine_level = mod_data.current_vaccine_level + (mod_data.vaccine_power/168)
     elseif mod_data.current_vaccine_level > 0
     then
-        mod_data.current_vaccine_level = mod_data.current_vaccine_level - (mod_data.vaccine_power/900)
+        mod_data.current_vaccine_level = mod_data.current_vaccine_level - (mod_data.vaccine_power/576)
     else
         mod_data.current_vaccine_level = 0
     end
