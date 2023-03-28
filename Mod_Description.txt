@@ -18,7 +18,7 @@
 
 	How do vaccines work?
 
-	Upon taking a vaccine, your immunity will slowly increase over the next 20 days. After that, your immunity level will start to fade away over the next 10 days. It's recommended to take another vaccine as a booster occasionally to maintain a high level of immunity.
+	Upon taking a vaccine, your immunity will slowly increase over the next 7 days. After that, your immunity level will start to fade away over the next 24 days. It's recommended to take another vaccine as a booster occasionally to maintain a high level of immunity.
 	
 	If you have the Moodle Framework mod installed then this mod will display a moodle letting you know when your immunity level is falling and below peak levels. It is not a requirement though.
 
