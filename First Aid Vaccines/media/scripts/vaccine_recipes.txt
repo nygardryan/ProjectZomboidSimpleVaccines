@@ -6,6 +6,28 @@ module FAVACCINE
         Base,
     }
 
+    recipe Clean Syringe
+    {
+        FAVACCINE.DirtySyringe=1,
+        WaterSaucepan;10,
+        CanBeDoneFromFloor:true,
+        Heat:-0.22,
+        Result:FAVACCINE.EmptySyringe,
+        Time:70.0,
+        Category:Health,
+    }
+
+    recipe Clean Syringe
+    {
+        FAVACCINE.DirtySyringe=1,
+        WaterPot;10,
+        CanBeDoneFromFloor:true,
+        Heat:-0.22,
+        Result:FAVACCINE.EmptySyringe,
+        Time:70.0,
+        Category:Health,
+    }
+
     recipe Boil Zombie Cells 
     {   
         FAVACCINE.LooseZombieCells=1,
@@ -18,8 +40,21 @@ module FAVACCINE
         Category:Health,
     }
 
-    recipe Create Crude Vaccine
+    recipe Boil Zombie Cells 
+    {   
+        FAVACCINE.LooseZombieCells=1,
+        WaterPot;5,
+        CanBeDoneFromFloor:true,
+        Heat:-0.22,
+        Result:FAVACCINE.BoiledZombieCells,
+        Time:70.0,
+        OnCreate:FavGiveXP,
+        Category:Health,
+    }
+
+    recipe Create Crude Zombie Vaccine
     {
+        FAVACCINE.EmptySyringe=1,
         FAVACCINE.BoiledZombieCells=2,
         WaterSaucepan;10,
         Pills=2,
@@ -30,8 +65,23 @@ module FAVACCINE
         OnCreate:FavGiveXP,
     }
 
-    recipe Create Simple Vaccine
+
+    recipe Create Crude Zombie Vaccine
     {
+        FAVACCINE.EmptySyringe=1,
+        FAVACCINE.BoiledZombieCells=2,
+        WaterPot;5,
+        Pills=2,
+        Result:FAVACCINE.CrudeVaccine,
+        Time:150.0,
+        Category:Health,
+        SkillRequired:Doctor=3,
+        OnCreate:FavGiveXP,
+    }
+
+    recipe Create Simple Zombie Vaccine
+    {
+        FAVACCINE.EmptySyringe=1,
         FAVACCINE.BoiledZombieCells=3,
         WaterSaucepan;10,
         Pills=2,
@@ -43,10 +93,41 @@ module FAVACCINE
         OnCreate:FavGiveXP,
     }
 
-    recipe Create Effective Vaccine
+    recipe Create Simple Zombie Vaccine
     {
+        FAVACCINE.EmptySyringe=1,
+        FAVACCINE.BoiledZombieCells=3,
+        WaterPot;5,
+        Pills=2,
+        ComfreyCataplasm/WildGarlicCataplasm/PlantainCataplasm=1,
+        Result:FAVACCINE.ZombieVaccine,
+        Time:170.0,
+        Category:Health,
+        SkillRequired:Doctor=5,
+        OnCreate:FavGiveXP,
+    }
+
+
+    recipe Create Effective Zombie Vaccine
+    {
+        FAVACCINE.EmptySyringe=1,
         FAVACCINE.BoiledZombieCells=4,
         WaterSaucepan;10,
+        Pills=2,
+        ComfreyCataplasm/WildGarlicCataplasm/PlantainCataplasm=1,
+        PillsAntiDep=2,
+        Result:FAVACCINE.PerfectedZombieVaccine,
+        Time:200.0,
+        Category:Health,
+        SkillRequired:Doctor=8,
+        OnCreate:FavGiveXP,
+    }
+
+     recipe Create Effective Zombie Vaccine
+    {
+        FAVACCINE.EmptySyringe=1,
+        FAVACCINE.BoiledZombieCells=4,
+        WaterPot;5,
         Pills=2,
         ComfreyCataplasm/WildGarlicCataplasm/PlantainCataplasm=1,
         PillsAntiDep=2,

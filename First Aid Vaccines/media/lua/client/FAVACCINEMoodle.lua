@@ -16,10 +16,6 @@ function FAVVaccineMoodleFunction(player)
 
     mod_data = player:getModData()
 
-    print(mod_data.current_vaccine_level)
-    print(mod_data.vaccine_power)
-    print(mod_data.vac_increasing)
-
     if isMoodleFrameWorkEnabled
     then
         if mod_data.current_vaccine_level > (mod_data.vaccine_power * 0.7)
