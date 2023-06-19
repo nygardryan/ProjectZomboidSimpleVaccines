@@ -1,0 +1,24 @@
+UI_ES = {
+
+--UI_FAV
+UI_FAV_Test = "PRUEBAS"
+UI_FAV_Cured = "Te has recuperado con exito del virus"
+UI_FAV_Extract = "Intento de extracción de ADN"
+
+UI_FAV_PERFECT = "Vacuna 95% efectiva al 7mo dia de la aplicacion, bajando su efectividad hasta llegar al mes (0%)"
+UI_FAV_NORMAL = "Vacuna 60% efectiva al 7mo dia de la aplicacion, bajando su efectividad hasta llegar al mes (0%)"
+UI_FAV_CRUDE = "Vacuna 35% efectiva al 7mo dia de la aplicacion, bajando su efectividad hasta llegar al mes (0%)"
+UI_FAV_BOILED = "Celulas zombie hervidas. 15% efectivas al 7mo día de consumidas, bajando su efectividad hasta llegar al mes (0%)"
+UI_FAV_CELLS = "Celulas zombie"
+UI_FAV_SYRINGE = "Jeringa vacia"
+UI_FAV_DIRTY_SYRINGE = "Jeringa sucia"
+
+UI_FAV_ZOMBIE_CELLS = "Celulas zombie"
+UI_FAV_BOILED_CELLS = "Celulas zombie hervidas"
+UI_FAV_CRUDEVACCINE = "Vacuna simple"
+UI_FAV_SIMPLEVACCINE = "Vacuna basica"
+UI_FAV_PERFECT_VACCINE = "Vacuna avanzada"
+
+UI_FAV_EMPTY_SYRINGE = "Jeringa vacia"
+UI_FAV_DIRTY_SYRINGE_NAME = "Jeringa sucia"
+}

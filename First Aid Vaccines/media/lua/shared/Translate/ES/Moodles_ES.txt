@@ -1,0 +1,18 @@
+Moodles_ES {
+    Moodles_vaccine_moodle_2_Good_lvl1 = "Disminucion de la inmunidad",
+    Moodles_vaccine_moodle_2_Good_desc_lvl1 = "Tienes algo de inmunidad, pero debe recibir otra vacuna.",
+    Moodles_vaccine_moodle_2_Good_lvl2 = "Buena inmunidad nivel 2",
+    Moodles_vaccine_moodle_2_Good_desc_lvl2 = "Tienes buena inmunidad",
+    Moodles_vaccine_moodle_2_Good_lvl3 = "Aumento de la inmunidad",
+    Moodles_vaccine_moodle_2_Good_desc_lvl3 = "Su inmunidad al virus va aumentando",
+    Moodles_vaccine_moodle_2_Good_lvl4 = "Inmunidad pico",
+    Moodles_vaccine_moodle_2_Good_desc_lvl4 = "Tiene Inmunidad Maxima contra el virus con su dosis actual",
+    Moodles_vaccine_moodle_2_Bad_lvl1 = "Sin inmunidad",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl1 = "No tienes inmunidad, toma una vacuna",
+    Moodles_vaccine_moodle_2_Bad_lvl2 = "Sin inmunidad",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl2 = "No tienes inmunidad, toma una vacuna",
+    Moodles_vaccine_moodle_2_Bad_lvl3 = "Sin inmunidad",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl3 = "No tienes inmunidad, toma una vacuna",
+    Moodles_vaccine_moodle_2_Bad_lvl4 = "Sin inmunidad",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl4 = "No tienes inmunidad, toma una vacuna",
+}

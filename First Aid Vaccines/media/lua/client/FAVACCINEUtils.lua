@@ -151,7 +151,7 @@ function ConsumeVaccine(items, player, result)
 end
 
 function FavGiveXP(item, recipe, player)
-    player:getXp():AddXP(Perks.Doctor, 12)
+    player:getXp():AddXP(Perks.Doctor, 9)
 end
 
 function PrintStuff()

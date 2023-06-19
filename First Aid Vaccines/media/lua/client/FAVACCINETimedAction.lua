@@ -37,11 +37,11 @@ end
 
 FAVExtractTimedAction = ISBaseTimedAction:derive("FAVExtractTimedAction")
 
-function FAVExtractTimedAction:isValid() -- Check if the action can be done
+function FAVExtractTimedAction:isValid()
     return true;
 end
 
-function FAVExtractTimedAction:update() -- Trigger every game update when the action is perform
+function FAVExtractTimedAction:update()
 end
 
 function FAVExtractTimedAction:waitToStart()
@@ -52,12 +52,12 @@ function FAVExtractTimedAction:start()
     self:setActionAnim("RipSheets")
 end
 
-function FAVExtractTimedAction:stop() -- Trigger if the action is cancel
+function FAVExtractTimedAction:stop()
     ISBaseTimedAction.stop(self);
 end
 
 function FAVExtractTimedAction:perform()
-    self.character:getXp():AddXP(Perks.Doctor, (2 + ZombRand(6)))
+    self.character:getXp():AddXP(Perks.Doctor, (2 + ZombRand(5)))
 
     if ZombRand(25) < self.character:getPerkLevel(Perks.Doctor) + 5 then
         self.character:getInventory():AddItem('FAVACCINE.LooseZombieCells')        
