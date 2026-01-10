@@ -1,4 +1,4 @@
 name=Simple Vaccines
-poster=poster.png
+poster=common/poster.png
 id=FAVACCINE
 description=Adds vaccination mechanics and recipes and more ways to improve first aid skill
