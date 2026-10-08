@@ -1,0 +1,18 @@
+Moodles_PL = {
+    Moodles_vaccine_moodle_2_Good_lvl1 = "Odpornoœæ spada",
+    Moodles_vaccine_moodle_2_Good_desc_lvl1 = "Wci¹¿ masz trochê odpornoœci, ale powinieneœ przyj¹æ kolejn¹ szczepionkê",
+    Moodles_vaccine_moodle_2_Good_lvl2 = "Dobra odpornoœæ",
+    Moodles_vaccine_moodle_2_Good_desc_lvl2 = "Masz dobr¹ odpornoœæ",
+    Moodles_vaccine_moodle_2_Good_lvl3 = "Odpornoœæ roœnie",
+    Moodles_vaccine_moodle_2_Good_desc_lvl3 = "Twoja odpornoœæ na wirusa roœnie",
+    Moodles_vaccine_moodle_2_Good_lvl4 = "Szczytowa odpornoœæ",
+    Moodles_vaccine_moodle_2_Good_desc_lvl4 = "Obecna szczepionka zapewnia ci szczytow¹ odpornoœæ na wirusa",
+    Moodles_vaccine_moodle_2_Bad_lvl1 = "Brak odpornoœci",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl1 = "Nie masz odpornoœci. Przyjmij szczepionkê",
+    Moodles_vaccine_moodle_2_Bad_lvl2 = "Brak odpornoœci",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl2 = "Nie masz odpornoœci. Przyjmij szczepionkê",
+    Moodles_vaccine_moodle_2_Bad_lvl3 = "Brak odpornoœci",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl3 = "Nie masz odpornoœci. Przyjmij szczepionkê",
+    Moodles_vaccine_moodle_2_Bad_lvl4 = "Brak odpornoœci",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl4 = "Nie masz odpornoœci. Przyjmij szczepionkê",
+}

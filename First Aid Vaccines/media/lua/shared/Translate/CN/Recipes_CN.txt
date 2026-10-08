@@ -1,0 +1,7 @@
+Recipes_CN = {
+    Recipe_Clean_Syringe = "清洗注射器",
+    Recipe_Boil_Zombie_Cells = "煮沸丧尸细胞",
+    Recipe_Create_Crude_Zombie_Vaccine = "制作粗制丧尸疫苗",
+    Recipe_Create_Simple_Zombie_Vaccine = "制作简易丧尸疫苗",
+    Recipe_Create_Effective_Zombie_Vaccine = "制作高效丧尸疫苗",
+}

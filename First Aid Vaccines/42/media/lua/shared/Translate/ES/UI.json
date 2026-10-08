@@ -1,12 +1,14 @@
 {
     "UI_FAV_Cured": "Te has recuperado con exito del virus",
     "UI_FAV_Extract": "Intento de extracción de ADN",
-    "UI_FAV_PERFECT": "Vacuna 95% efectiva al 7mo dia de la aplicacion, bajando su efectividad hasta llegar al mes (0%)",
-    "UI_FAV_NORMAL": "Vacuna 60% efectiva al 7mo dia de la aplicacion, bajando su efectividad hasta llegar al mes (0%)",
-    "UI_FAV_CRUDE": "Vacuna 35% efectiva al 7mo dia de la aplicacion, bajando su efectividad hasta llegar al mes (0%)",
-    "UI_FAV_BOILED": "Celulas zombie hervidas. 15% efectivas al 7mo día de consumidas, bajando su efectividad hasta llegar al mes (0%)",
+    "UI_FAV_PERFECT": "Una vacuna contra el virus zombi, proporciona una resistencia considerable al virus",
+    "UI_FAV_NORMAL": "Una vacuna contra el virus zombi, proporciona buena resistencia al virus",
+    "UI_FAV_CRUDE": "Una vacuna rudimentaria contra el virus zombi, proporciona algo de inmunidad",
+    "UI_FAV_BOILED": "Células zombi hervidas por seguridad, proporcionan algo de inmunidad natural",
     "UI_FAV_CELLS": "Celulas zombie",
     "UI_FAV_SYRINGE": "Jeringa vacia",
     "UI_FAV_DIRTY_SYRINGE": "Jeringa sucia",
-    "UI_FAV_Inject": "Inyectar"
+    "UI_FAV_Inject": "Inyectar",
+    "UI_FAV_Dose": "Inmunidad en aumento...",
+    "UI_FAV_AlreadySampled": "Ya se ha extraído ADN de este cadáver"
 }

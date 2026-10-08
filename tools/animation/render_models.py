@@ -62,40 +62,41 @@ def shot(sc, cam, loc, look, scale, path):
     return Image.open(path).convert('RGB')
 
 
-tiles = []
-# 1) the five syringe colourways, hand model
-sc, cam = setup()
-V, F, UV = read_static(D + 'FAVSyringe.X')
-for i, tex in enumerate(['FAVSyringe_Empty', 'FAVSyringe_Dirty', 'FAVSyringe_Crude', 'FAVSyringe_Simple', 'FAVSyringe_Perfect']):
-    M = np.eye(4); M[3, :3] = [0.035 * (i - 2), 0, 0]
-    add_obj(tex, V, F, UV, tex, M)
-im = shot(sc, cam, (0.4, -0.6, 0.35), (0, 0, 0.005), 0.24, '/tmp/m1.png')
-ImageDraw.Draw(im).text((6, 4), 'FAVSyringe.X (hand) - empty, dirty, crude, simple, perfect', fill=(0, 0, 0)); tiles.append(im)
-# 2) world syringe + petri dishes
-sc, cam = setup()
-Vw, Fw, UVw = read_static(D + 'FAVSyringe_World.X')
-add_obj('w', Vw, Fw, UVw, 'FAVSyringe_Crude')
-Vp, Fp, UVp = read_static(D + 'FAVPetriDish.X')
-M = np.eye(4); M[3, :3] = [0.06, 0, -0.07]; add_obj('p1', Vp, Fp, UVp, 'FAVPetri_Cells', M)
-M = np.eye(4); M[3, :3] = [-0.06, 0, -0.07]; add_obj('p2', Vp, Fp, UVp, 'FAVPetri_Boiled', M)
-bpy.ops.mesh.primitive_plane_add(size=0.6)
-im = shot(sc, cam, (0.25, -0.45, 0.35), (0, 0.06, 0), 0.26, '/tmp/m2.png')
-ImageDraw.Draw(im).text((6, 4), 'On the ground: syringe (world), petri dish cells / boiled', fill=(0, 0, 0)); tiles.append(im)
-# 3) syringe in the hand at the moment of injection (real clip + skinned body)
-for t_s, label in ((1.5, 'inject 1.5s'), (0.45, 'inject 0.45s')):
+if __name__ == '__main__':
+    tiles = []
+    # 1) the five syringe colourways, hand model
     sc, cam = setup()
-    x = XFile('out/Bob_FAV_Inject.X'); x.load_mesh()
-    w = x.pose_world(t_s * x.ticks)
-    body = bpy.data.meshes.new('b'); body.from_pydata(_to_blender(x.skin(w)).tolist(), [], x.mesh['faces'])
-    bo = bpy.data.objects.new('b', body); sc.collection.objects.link(bo)
-    add_obj('s', V, F, UV, 'FAVSyringe_Simple', w['Bip01_Prop1'])
-    site = _to_blender(w['Bip01_L_UpperArm'][3, :3])
-    im = shot(sc, cam, tuple(site + np.array([-0.35, 0.45, 0.12])), tuple(site + np.array([0, 0, -0.04])), 0.32, '/tmp/m3.png')
-    ImageDraw.Draw(im).text((6, 4), label + ' (front-left close-up)', fill=(0, 0, 0)); tiles.append(im)
+    V, F, UV = read_static(D + 'FAVSyringe.X')
+    for i, tex in enumerate(['FAVSyringe_Empty', 'FAVSyringe_Dirty', 'FAVSyringe_Crude', 'FAVSyringe_Simple', 'FAVSyringe_Perfect']):
+        M = np.eye(4); M[3, :3] = [0.035 * (i - 2), 0, 0]
+        add_obj(tex, V, F, UV, tex, M)
+    im = shot(sc, cam, (0.4, -0.6, 0.35), (0, 0, 0.005), 0.24, '/tmp/m1.png')
+    ImageDraw.Draw(im).text((6, 4), 'FAVSyringe.X (hand) - empty, dirty, crude, simple, perfect', fill=(0, 0, 0)); tiles.append(im)
+    # 2) world syringe + petri dishes
+    sc, cam = setup()
+    Vw, Fw, UVw = read_static(D + 'FAVSyringe_World.X')
+    add_obj('w', Vw, Fw, UVw, 'FAVSyringe_Crude')
+    Vp, Fp, UVp = read_static(D + 'FAVPetriDish.X')
+    M = np.eye(4); M[3, :3] = [0.06, 0, -0.07]; add_obj('p1', Vp, Fp, UVp, 'FAVPetri_Cells', M)
+    M = np.eye(4); M[3, :3] = [-0.06, 0, -0.07]; add_obj('p2', Vp, Fp, UVp, 'FAVPetri_Boiled', M)
+    bpy.ops.mesh.primitive_plane_add(size=0.6)
+    im = shot(sc, cam, (0.25, -0.45, 0.35), (0, 0.06, 0), 0.26, '/tmp/m2.png')
+    ImageDraw.Draw(im).text((6, 4), 'On the ground: syringe (world), petri dish cells / boiled', fill=(0, 0, 0)); tiles.append(im)
+    # 3) syringe in the hand at the moment of injection (real clip + skinned body)
+    for t_s, label in ((1.5, 'inject 1.5s'), (0.45, 'inject 0.45s')):
+        sc, cam = setup()
+        x = XFile('out/Bob_FAV_Inject.X'); x.load_mesh()
+        w = x.pose_world(t_s * x.ticks)
+        body = bpy.data.meshes.new('b'); body.from_pydata(_to_blender(x.skin(w)).tolist(), [], x.mesh['faces'])
+        bo = bpy.data.objects.new('b', body); sc.collection.objects.link(bo)
+        add_obj('s', V, F, UV, 'FAVSyringe_Simple', w['Bip01_Prop1'])
+        site = _to_blender(w['Bip01_L_UpperArm'][3, :3])
+        im = shot(sc, cam, tuple(site + np.array([-0.35, 0.45, 0.12])), tuple(site + np.array([0, 0, -0.04])), 0.32, '/tmp/m3.png')
+        ImageDraw.Draw(im).text((6, 4), label + ' (front-left close-up)', fill=(0, 0, 0)); tiles.append(im)
 
-W = max(t.width for t in tiles)
-sheet = Image.new('RGB', (W * 2, tiles[0].height * 2), 'white')
-for i, t in enumerate(tiles):
-    sheet.paste(t, ((i % 2) * W, (i // 2) * t.height))
-sheet.save('out/models_check.png')
-print('ok')
+    W = max(t.width for t in tiles)
+    sheet = Image.new('RGB', (W * 2, tiles[0].height * 2), 'white')
+    for i, t in enumerate(tiles):
+        sheet.paste(t, ((i % 2) * W, (i // 2) * t.height))
+    sheet.save('out/models_check.png')
+    print('ok')

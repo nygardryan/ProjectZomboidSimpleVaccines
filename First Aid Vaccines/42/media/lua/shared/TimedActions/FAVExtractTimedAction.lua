@@ -8,6 +8,11 @@ FAVExtractTimedAction = ISBaseTimedAction:derive("FAVExtractTimedAction")
 
 FAVExtractTimedAction.properTools = { Scalpel = true }
 
+-- One DNA extraction per corpse: the corpse is kept and marked in its mod data.
+function FAVExtractTimedAction.isSampled(corpse)
+    return corpse ~= nil and corpse:getModData().FAVSampled == true
+end
+
 function FAVExtractTimedAction.isProperTool(item)
     return item ~= nil and FAVExtractTimedAction.properTools[item:getType()] == true
 end
@@ -15,6 +20,7 @@ end
 function FAVExtractTimedAction:isValid()
     return self.corpse ~= nil
         and self.corpse:getSquare() ~= nil
+        and not FAVExtractTimedAction.isSampled(self.corpse)
         and self.extractionTool ~= nil
         and self.character:getInventory():containsRecursive(self.extractionTool)
 end
@@ -66,7 +72,11 @@ function FAVExtractTimedAction:complete()
         end
     end
 
-    square:removeCorpse(self.corpse, false)
+    -- keep the body, but mark it so nobody can sample it again (synced to all clients in MP)
+    self.corpse:getModData().FAVSampled = true
+    if isServer() then
+        self.corpse:transmitModData()
+    end
     return true
 end
 

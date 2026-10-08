@@ -8,5 +8,7 @@
     "UI_FAV_CELLS": "丧尸细胞……我要这个干什么？",
     "UI_FAV_SYRINGE": "一支空注射器",
     "UI_FAV_DIRTY_SYRINGE": "一支脏注射器，已经被别人用过了",
-    "UI_FAV_Inject": "注射"
+    "UI_FAV_Inject": "注射",
+    "UI_FAV_Dose": "免疫力正在形成……",
+    "UI_FAV_AlreadySampled": "已经从这具尸体上提取过DNA"
 }

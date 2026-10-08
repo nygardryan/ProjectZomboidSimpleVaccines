@@ -51,8 +51,9 @@ function FAVUtils.addItem(player, fullType)
     return item
 end
 
--- Called whenever vaccine state changes: update the moodle locally, or tell the client in MP.
-function FAVUtils.onStateChanged(player, cured)
+-- Called whenever vaccine state changes: update the moodle/messages locally, or tell the client in MP.
+-- cured = a dose just stopped an infection, dosed = a vaccine was just taken.
+function FAVUtils.onStateChanged(player, cured, dosed)
     local md = FAVUtils.InitializeTable(player)
     if isServer() then
         sendServerCommand(player, FAVUtils.MODULE, "state", {
@@ -62,9 +63,11 @@ function FAVUtils.onStateChanged(player, cured)
             current_vaccine_level = md.current_vaccine_level,
             cure_attempted = md.cure_attempted,
             cured = cured and true or false,
+            dosed = dosed and true or false,
         })
     elseif FAVMoodle and FAVMoodle.update then
         FAVMoodle.update(player)
+        FAVMoodle.notify(player, cured, dosed)
     end
 end
 
@@ -77,6 +80,13 @@ function FAVUtils.CureInfection(player)
     local bodyParts = bodyDamage:getBodyParts()
     for i = bodyParts:size() - 1, 0, -1 do
         bodyParts:get(i):SetInfected(false)
+    end
+    if isServer() then
+        -- push the cure to the player's client (same calls the game's own health code uses)
+        for i = 0, bodyParts:size() - 1 do
+            syncBodyPart(bodyParts:get(i), 0xFFFFFFFFFFF)
+        end
+        sendDamage(player)
     end
 end
 
@@ -102,7 +112,7 @@ function FAVUtils.SetVaccine(player, fullType)
     if md.current_vaccine_level < md.vaccine_power then
         md.vac_increasing = 1
     end
-    FAVUtils.onStateChanged(player)
+    FAVUtils.onStateChanged(player, false, true)
 end
 
 -- Hourly update for one player.

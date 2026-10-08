@@ -1,0 +1,9 @@
+ItemName_ES = {
+    ItemName_FAVACCINE.LooseZombieCells = "Celulas zombie",
+    ItemName_FAVACCINE.BoiledZombieCells = "Celulas zombie hervidas",
+    ItemName_FAVACCINE.CrudeVaccine = "Vacuna simple",
+    ItemName_FAVACCINE.ZombieVaccine = "Vacuna basica",
+    ItemName_FAVACCINE.PerfectedZombieVaccine = "Vacuna avanzada",
+    ItemName_FAVACCINE.EmptySyringe = "Jeringa vacia",
+    ItemName_FAVACCINE.DirtySyringe = "Jeringa sucia",
+}

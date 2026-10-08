@@ -1,16 +1,11 @@
-Sanbox_EN = {
-
-Sandbox_SimpleVaccines = "SimpleVaccines",
-
-Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness = "Efectividad de las cÃ©lulas zombies hervidas",
-Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip = "Ajusta la eficacia de la vacuna de cÃ©lulas zombis hervidas. El nÃºmero equivale al porcentaje mÃ¡ximo de probabilidad que tiene la vacuna de prevenir la zombificaciÃ³n"
-
-Sandbox_SimpleVaccines_CrudeVaccineEffectiveness = "Efectividad de la vacuna cruda"
-Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip = "Ajusta la eficacia de la vacuna cruda contra zombis. El nÃºmero equivale al porcentaje mÃ¡ximo de probabilidad que tiene la vacuna de prevenir la zombificaciÃ³n"
-
-Sandbox_SimpleVaccines_SimpleVaccineEffectiveness = "Eficacia de la vacuna simple"
-Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip = "Ajusta la eficacia de la vacuna zombi simple. El nÃºmero equivale al porcentaje mÃ¡ximo de probabilidad que tiene la vacuna de prevenir la zombificaciÃ³n"
-
-Sandbox_SimpleVaccines_PerfectVaccineEffectiveness = "Eficacia de la vacuna perfecta"
-Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip = "Ajusta la eficacia de la vacuna zombie perfecta. El nÃºmero equivale al porcentaje mÃ¡ximo de probabilidad que tiene la vacuna de prevenir la zombificaciÃ³n"
+Sandbox_ES = {
+    Sandbox_SimpleVaccines = "Simple Vaccines",
+    Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness = "Efectividad de las células zombies hervidas",
+    Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip = "Ajusta la eficacia de la vacuna de células zombis hervidas. El número equivale al porcentaje máximo de probabilidad que tiene la vacuna de prevenir la zombificación",
+    Sandbox_SimpleVaccines_CrudeVaccineEffectiveness = "Efectividad de la vacuna cruda",
+    Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip = "Ajusta la eficacia de la vacuna cruda contra zombis. El número equivale al porcentaje máximo de probabilidad que tiene la vacuna de prevenir la zombificación",
+    Sandbox_SimpleVaccines_SimpleVaccineEffectiveness = "Eficacia de la vacuna simple",
+    Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip = "Ajusta la eficacia de la vacuna zombi simple. El número equivale al porcentaje máximo de probabilidad que tiene la vacuna de prevenir la zombificación",
+    Sandbox_SimpleVaccines_PerfectVaccineEffectiveness = "Eficacia de la vacuna perfecta",
+    Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip = "Ajusta la eficacia de la vacuna zombie perfecta. El número equivale al porcentaje máximo de probabilidad que tiene la vacuna de prevenir la zombificación",
 }

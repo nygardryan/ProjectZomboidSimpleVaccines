@@ -1,24 +1,11 @@
 UI_ES = {
-
---UI_FAV
-UI_FAV_Test = "PRUEBAS"
-UI_FAV_Cured = "Te has recuperado con exito del virus"
-UI_FAV_Extract = "Intento de extracci√≥n de ADN"
-
-UI_FAV_PERFECT = "Vacuna 95% efectiva al 7mo dia de la aplicacion, bajando su efectividad hasta llegar al mes (0%)"
-UI_FAV_NORMAL = "Vacuna 60% efectiva al 7mo dia de la aplicacion, bajando su efectividad hasta llegar al mes (0%)"
-UI_FAV_CRUDE = "Vacuna 35% efectiva al 7mo dia de la aplicacion, bajando su efectividad hasta llegar al mes (0%)"
-UI_FAV_BOILED = "Celulas zombie hervidas. 15% efectivas al 7mo d√≠a de consumidas, bajando su efectividad hasta llegar al mes (0%)"
-UI_FAV_CELLS = "Celulas zombie"
-UI_FAV_SYRINGE = "Jeringa vacia"
-UI_FAV_DIRTY_SYRINGE = "Jeringa sucia"
-
-UI_FAV_ZOMBIE_CELLS = "Celulas zombie"
-UI_FAV_BOILED_CELLS = "Celulas zombie hervidas"
-UI_FAV_CRUDEVACCINE = "Vacuna simple"
-UI_FAV_SIMPLEVACCINE = "Vacuna basica"
-UI_FAV_PERFECT_VACCINE = "Vacuna avanzada"
-
-UI_FAV_EMPTY_SYRINGE = "Jeringa vacia"
-UI_FAV_DIRTY_SYRINGE_NAME = "Jeringa sucia"
+    UI_FAV_Cured = "Te has recuperado con exito del virus",
+    UI_FAV_Extract = "Intento de extracciÛn de ADN",
+    UI_FAV_PERFECT = "Una vacuna contra el virus zombi, proporciona una resistencia considerable al virus",
+    UI_FAV_NORMAL = "Una vacuna contra el virus zombi, proporciona buena resistencia al virus",
+    UI_FAV_CRUDE = "Una vacuna rudimentaria contra el virus zombi, proporciona algo de inmunidad",
+    UI_FAV_BOILED = "CÈlulas zombi hervidas por seguridad, proporcionan algo de inmunidad natural",
+    UI_FAV_CELLS = "Celulas zombie",
+    UI_FAV_SYRINGE = "Jeringa vacia",
+    UI_FAV_DIRTY_SYRINGE = "Jeringa sucia",
 }

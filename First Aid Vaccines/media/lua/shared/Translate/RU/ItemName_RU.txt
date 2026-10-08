@@ -1,0 +1,9 @@
+ItemName_RU = {
+    ItemName_FAVACCINE.LooseZombieCells = "Зомби-клетки",
+    ItemName_FAVACCINE.BoiledZombieCells = "Варёные зомби-клетки",
+    ItemName_FAVACCINE.CrudeVaccine = "Грубая вакцина от зомби",
+    ItemName_FAVACCINE.ZombieVaccine = "Простая вакцина от зомби",
+    ItemName_FAVACCINE.PerfectedZombieVaccine = "Идеальная вакцина от зомби",
+    ItemName_FAVACCINE.EmptySyringe = "Пустой шприц",
+    ItemName_FAVACCINE.DirtySyringe = "Грязный шприц",
+}

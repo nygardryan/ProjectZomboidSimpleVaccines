@@ -38,6 +38,16 @@ function FAVMoodle.update(player)
     end
 end
 
+-- Floating text over the player: when a vaccine is taken and when it stops an infection.
+function FAVMoodle.notify(player, cured, dosed)
+    if not player or not player:isLocalPlayer() then return end
+    if cured then
+        HaloTextHelper.addGoodText(player, getText("UI_FAV_Cured"))
+    elseif dosed then
+        HaloTextHelper.addGoodText(player, getText("UI_FAV_Dose"))
+    end
+end
+
 -- MP: the server owns vaccine state; mirror it into the local player's mod data.
 local function findLocalPlayer(onlineID)
     for i = 0, getNumActivePlayers() - 1 do
@@ -63,6 +73,7 @@ local function onServerCommand(module, command, args)
         FAVUtils.CureInfection(player)
     end
     FAVMoodle.update(player)
+    FAVMoodle.notify(player, args.cured, args.dosed)
 end
 
 Events.OnServerCommand.Add(onServerCommand)

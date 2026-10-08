@@ -8,5 +8,7 @@
     "UI_FAV_CELLS": "Des cellules zombies... pourquoi voudrais-je ça ?",
     "UI_FAV_SYRINGE": "Une seringue vide",
     "UI_FAV_DIRTY_SYRINGE": "Une seringue sale, quelqu'un l'a déjà utilisée",
-    "UI_FAV_Inject": "Injecter"
+    "UI_FAV_Inject": "Injecter",
+    "UI_FAV_Dose": "Immunité en cours de développement...",
+    "UI_FAV_AlreadySampled": "L'ADN de ce cadavre a déjà été extrait"
 }

@@ -27,7 +27,7 @@ end
 function FAVExtract.doAction(worldobjects, playerNum, corpse)
     local playerObj = getSpecificPlayer(playerNum)
     local tool = FAVExtract.findTool(playerObj)
-    if not tool or not corpse or not corpse:getSquare() then return end
+    if not tool or not corpse or not corpse:getSquare() or FAVExtractTimedAction.isSampled(corpse) then return end
 
     if luautils.walkAdj(playerObj, corpse:getSquare()) then
         ISInventoryPaneContextMenu.equipWeapon(tool, true, false, playerNum)
@@ -43,6 +43,15 @@ function FAVExtract.doMenu(playerNum, context, worldobjects, test)
     local playerObj = getSpecificPlayer(playerNum)
     if not playerObj or not FAVExtract.findTool(playerObj) then return end
 
+    if FAVExtractTimedAction.isSampled(corpse) then
+        -- already sampled: show the option greyed out with an explanation
+        local option = context:addOption(getText("UI_FAV_Extract"), worldobjects, nil)
+        option.notAvailable = true
+        local tooltip = ISWorldObjectContextMenu.addToolTip()
+        tooltip.description = "<RGB:1,0,0> " .. getText("UI_FAV_AlreadySampled")
+        option.toolTip = tooltip
+        return
+    end
     context:addOption(getText("UI_FAV_Extract"), worldobjects, FAVExtract.doAction, playerNum, corpse)
 end
 

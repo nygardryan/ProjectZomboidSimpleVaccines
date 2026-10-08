@@ -1,0 +1,11 @@
+Sandbox_JP = {
+    Sandbox_SimpleVaccines = "Simple Vaccines",
+    Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness = "効果: 煮沸したゾンビ細胞",
+    Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip = "このワクチンの効果を調整します。数値はゾンビ化を防ぐ最大確率（%）です。",
+    Sandbox_SimpleVaccines_CrudeVaccineEffectiveness = "効果: 粗製ワクチン",
+    Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip = "このワクチンの効果を調整します。数値はゾンビ化を防ぐ最大確率（%）です。",
+    Sandbox_SimpleVaccines_SimpleVaccineEffectiveness = "効果: 簡易ワクチン",
+    Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip = "このワクチンの効果を調整します。数値はゾンビ化を防ぐ最大確率（%）です。",
+    Sandbox_SimpleVaccines_PerfectVaccineEffectiveness = "効果: 完璧なワクチン",
+    Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip = "このワクチンの効果を調整します。数値はゾンビ化を防ぐ最大確率（%）です。",
+}

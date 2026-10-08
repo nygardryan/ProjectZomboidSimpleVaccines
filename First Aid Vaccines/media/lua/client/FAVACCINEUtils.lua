@@ -82,24 +82,24 @@ function SetVaccine(player, items)
     mod_data = player:getModData()
 
 
-    if items:getName() == 'Boiled Zombie Cells'
+    if items:getFullType() == 'FAVACCINE.BoiledZombieCells'
     then
         mod_data.vaccine_power = SandboxVars.SimpleVaccines.BoiledZombieCellsEffectiveness
     end
 
-    if items:getName() == 'Crude Zombie Vaccine'
+    if items:getFullType() == 'FAVACCINE.CrudeVaccine'
     then
         mod_data.vaccine_power = SandboxVars.SimpleVaccines.CrudeVaccineEffectiveness
         player:getInventory():AddItem('FAVACCINE.DirtySyringe')
     end
 
-    if items:getName() == 'Simple Zombie Vaccine'
+    if items:getFullType() == 'FAVACCINE.ZombieVaccine'
     then
         mod_data.vaccine_power = SandboxVars.SimpleVaccines.SimpleVaccineEffectiveness
         player:getInventory():AddItem('FAVACCINE.DirtySyringe')
     end
 
-    if items:getName() == 'Perfect Zombie Vaccine'
+    if items:getFullType() == 'FAVACCINE.PerfectedZombieVaccine'
     then
         mod_data.vaccine_power = SandboxVars.SimpleVaccines.PerfectVaccineEffectiveness
         player:getInventory():AddItem('FAVACCINE.DirtySyringe')

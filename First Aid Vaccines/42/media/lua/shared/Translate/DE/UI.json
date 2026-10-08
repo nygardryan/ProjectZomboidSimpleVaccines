@@ -8,5 +8,7 @@
     "UI_FAV_CELLS": "Zombiezellen – wozu sollte ich die wollen?",
     "UI_FAV_SYRINGE": "Eine leere Spritze",
     "UI_FAV_DIRTY_SYRINGE": "Eine schmutzige Spritze, jemand hat sie schon benutzt",
-    "UI_FAV_Inject": "Injizieren"
+    "UI_FAV_Inject": "Injizieren",
+    "UI_FAV_Dose": "Immunität baut sich auf...",
+    "UI_FAV_AlreadySampled": "Aus dieser Leiche wurde bereits DNA entnommen"
 }

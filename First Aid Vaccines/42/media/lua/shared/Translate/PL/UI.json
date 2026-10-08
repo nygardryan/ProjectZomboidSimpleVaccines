@@ -8,5 +8,7 @@
     "UI_FAV_CELLS": "Komórki zombie... po co mi to?",
     "UI_FAV_SYRINGE": "Pusta strzykawka",
     "UI_FAV_DIRTY_SYRINGE": "Brudna strzykawka, ktoś już jej używał",
-    "UI_FAV_Inject": "Wstrzyknij"
+    "UI_FAV_Inject": "Wstrzyknij",
+    "UI_FAV_Dose": "Odporność narasta...",
+    "UI_FAV_AlreadySampled": "Z tych zwłok pobrano już DNA"
 }

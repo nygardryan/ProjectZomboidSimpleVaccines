@@ -1,0 +1,9 @@
+ItemName_JP = {
+    ItemName_FAVACCINE.LooseZombieCells = "ゾンビ細胞",
+    ItemName_FAVACCINE.BoiledZombieCells = "煮沸したゾンビ細胞",
+    ItemName_FAVACCINE.CrudeVaccine = "粗製ゾンビワクチン",
+    ItemName_FAVACCINE.ZombieVaccine = "簡易ゾンビワクチン",
+    ItemName_FAVACCINE.PerfectedZombieVaccine = "完璧なゾンビワクチン",
+    ItemName_FAVACCINE.EmptySyringe = "空の注射器",
+    ItemName_FAVACCINE.DirtySyringe = "汚れた注射器",
+}

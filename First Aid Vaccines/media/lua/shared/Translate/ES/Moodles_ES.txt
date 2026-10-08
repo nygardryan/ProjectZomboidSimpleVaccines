@@ -1,4 +1,4 @@
-Moodles_ES {
+Moodles_ES = {
     Moodles_vaccine_moodle_2_Good_lvl1 = "Disminucion de la inmunidad",
     Moodles_vaccine_moodle_2_Good_desc_lvl1 = "Tienes algo de inmunidad, pero debe recibir otra vacuna.",
     Moodles_vaccine_moodle_2_Good_lvl2 = "Buena inmunidad nivel 2",

@@ -1,0 +1,18 @@
+Moodles_JP = {
+    Moodles_vaccine_moodle_2_Good_lvl1 = "免疫低下中",
+    Moodles_vaccine_moodle_2_Good_desc_lvl1 = "まだ免疫は残っているが、追加のワクチンを接種した方がいい",
+    Moodles_vaccine_moodle_2_Good_lvl2 = "良好な免疫",
+    Moodles_vaccine_moodle_2_Good_desc_lvl2 = "免疫は良好だ",
+    Moodles_vaccine_moodle_2_Good_lvl3 = "免疫上昇中",
+    Moodles_vaccine_moodle_2_Good_desc_lvl3 = "ウイルスへの免疫が高まっている",
+    Moodles_vaccine_moodle_2_Good_lvl4 = "最大免疫",
+    Moodles_vaccine_moodle_2_Good_desc_lvl4 = "現在のワクチンでウイルスへの免疫が最大になっている",
+    Moodles_vaccine_moodle_2_Bad_lvl1 = "免疫なし",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl1 = "免疫がない。ワクチンを接種しよう",
+    Moodles_vaccine_moodle_2_Bad_lvl2 = "免疫なし",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl2 = "免疫がない。ワクチンを接種しよう",
+    Moodles_vaccine_moodle_2_Bad_lvl3 = "免疫なし",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl3 = "免疫がない。ワクチンを接種しよう",
+    Moodles_vaccine_moodle_2_Bad_lvl4 = "免疫なし",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl4 = "免疫がない。ワクチンを接種しよう",
+}

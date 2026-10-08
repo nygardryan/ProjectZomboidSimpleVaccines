@@ -8,5 +8,7 @@
     "UI_FAV_CELLS": "ゾンビ細胞…こんなもの何に使うんだ？",
     "UI_FAV_SYRINGE": "空の注射器",
     "UI_FAV_DIRTY_SYRINGE": "汚れた注射器。誰かが使ったものだ",
-    "UI_FAV_Inject": "注射する"
+    "UI_FAV_Inject": "注射する",
+    "UI_FAV_Dose": "免疫が形成されつつある…",
+    "UI_FAV_AlreadySampled": "この死体からはすでにDNAを抽出した"
 }

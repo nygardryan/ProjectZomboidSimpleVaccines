@@ -1,0 +1,9 @@
+ItemName_PTBR = {
+    ItemName_FAVACCINE.LooseZombieCells = "Células Zumbi",
+    ItemName_FAVACCINE.BoiledZombieCells = "Células Zumbi Fervidas",
+    ItemName_FAVACCINE.CrudeVaccine = "Vacina Zumbi Rudimentar",
+    ItemName_FAVACCINE.ZombieVaccine = "Vacina Zumbi Simples",
+    ItemName_FAVACCINE.PerfectedZombieVaccine = "Vacina Zumbi Perfeita",
+    ItemName_FAVACCINE.EmptySyringe = "Seringa Vazia",
+    ItemName_FAVACCINE.DirtySyringe = "Seringa Suja",
+}

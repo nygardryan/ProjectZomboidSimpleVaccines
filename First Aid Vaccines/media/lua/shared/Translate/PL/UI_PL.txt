@@ -1,0 +1,11 @@
+UI_PL = {
+    UI_FAV_Cured = "Uda³o ci siê wyleczyæ z wirusa zombie",
+    UI_FAV_Extract = "Spróbuj pobraæ DNA",
+    UI_FAV_PERFECT = "Szczepionka na wirusa zombie, zapewnia znaczn¹ odpornoœæ na wirusa",
+    UI_FAV_NORMAL = "Szczepionka na wirusa zombie, zapewnia dobr¹ odpornoœæ na wirusa",
+    UI_FAV_CRUDE = "Prymitywna szczepionka na wirusa zombie, zapewnia pewn¹ odpornoœæ",
+    UI_FAV_BOILED = "Komórki zombie ugotowane dla bezpieczeñstwa, zapewniaj¹ trochê naturalnej odpornoœci",
+    UI_FAV_CELLS = "Komórki zombie... po co mi to?",
+    UI_FAV_SYRINGE = "Pusta strzykawka",
+    UI_FAV_DIRTY_SYRINGE = "Brudna strzykawka, ktoœ ju¿ jej u¿ywa³",
+}
