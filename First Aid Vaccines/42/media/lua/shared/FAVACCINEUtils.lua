@@ -19,11 +19,28 @@ local DEFAULTS = {
     CrudeVaccineEffectiveness = 35,
     SimpleVaccineEffectiveness = 60,
     PerfectVaccineEffectiveness = 95,
+    ImmunityBuildDays = 7,           -- days for a dose to reach full strength
+    ImmunityFadeDays = 24,           -- days for full immunity to fade back to nothing
+    ExtractBaseChance = 20,          -- % chance to get cells at First Aid 0
+    ExtractChancePerLevel = 4,       -- extra % per First Aid level
+    OneExtractionPerCorpse = true,
 }
 
--- Immunity builds over 7 days (168 h) and fades over 24 days (576 h).
-local HOURS_TO_PEAK = 168
-local HOURS_TO_FADE = 576
+-- Public API for other mods -------------------------------------------------------
+-- FAVUtils.getImmunity(player)  -> current chance (0-100) that the next infection is stopped
+-- FAVUtils.isImmunityRising(player) -> true while a dose is still building up
+-- table.insert(FAVUtils.cureListeners, function(player) ... end)  -> called when a vaccine cures someone
+FAVUtils.cureListeners = FAVUtils.cureListeners or {}
+
+function FAVUtils.getImmunity(player)
+    if not player then return 0 end
+    return math.max(0, FAVUtils.InitializeTable(player).current_vaccine_level or 0)
+end
+
+function FAVUtils.isImmunityRising(player)
+    return player ~= nil and FAVUtils.InitializeTable(player).vac_increasing == 1
+end
+-------------------------------------------------------------------------------------
 
 function FAVUtils.getOption(name)
     local sv = SandboxVars and SandboxVars.SimpleVaccines
@@ -77,9 +94,18 @@ function FAVUtils.CureInfection(player)
     bodyDamage:setInfectionMortalityDuration(-1)
     bodyDamage:setInfectionTime(-1)
     bodyDamage:setInfectionLevel(0)
+    if bodyDamage.setInfectionGrowthRate then bodyDamage:setInfectionGrowthRate(0) end
     local bodyParts = bodyDamage:getBodyParts()
     for i = bodyParts:size() - 1, 0, -1 do
         bodyParts:get(i):SetInfected(false)
+    end
+    -- Build 42 also tracks infection progress and zombie fever as character stats
+    local stats = player:getStats()
+    local infectionStats = {}
+    if CharacterStat then
+        for _, stat in ipairs({ CharacterStat.ZOMBIE_INFECTION, CharacterStat.ZOMBIE_FEVER }) do
+            if stat then stats:set(stat, 0); table.insert(infectionStats, stat) end
+        end
     end
     if isServer() then
         -- push the cure to the player's client (same calls the game's own health code uses)
@@ -87,6 +113,12 @@ function FAVUtils.CureInfection(player)
             syncBodyPart(bodyParts:get(i), 0xFFFFFFFFFFF)
         end
         sendDamage(player)
+        for _, stat in ipairs(infectionStats) do
+            if sendPlayerStat then pcall(sendPlayerStat, player, stat) end
+        end
+    end
+    if not isClient() then       -- once, on the side that owns the state (SP or the MP server)
+        for _, fn in ipairs(FAVUtils.cureListeners) do pcall(fn, player) end
     end
 end
 
@@ -120,10 +152,12 @@ function FAVUtils.VaccineFunction(player)
     if not player or player:isDead() then return end
     local md = FAVUtils.InitializeTable(player)
 
+    local hoursToPeak = math.max(1, FAVUtils.getOption("ImmunityBuildDays") * 24)
+    local hoursToFade = math.max(1, FAVUtils.getOption("ImmunityFadeDays") * 24)
     if md.vac_increasing == 1 then
-        md.current_vaccine_level = md.current_vaccine_level + (md.vaccine_power / HOURS_TO_PEAK)
+        md.current_vaccine_level = md.current_vaccine_level + (md.vaccine_power / hoursToPeak)
     elseif md.current_vaccine_level > 0 then
-        md.current_vaccine_level = md.current_vaccine_level - (md.vaccine_power / HOURS_TO_FADE)
+        md.current_vaccine_level = md.current_vaccine_level - (md.vaccine_power / hoursToFade)
     end
     if md.current_vaccine_level < 0 then
         md.current_vaccine_level = 0

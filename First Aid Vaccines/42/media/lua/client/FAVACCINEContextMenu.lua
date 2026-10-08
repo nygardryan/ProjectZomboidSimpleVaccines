@@ -3,15 +3,8 @@ require "TimedActions/FAVExtractTimedAction"
 
 local FAVExtract = {}
 
-FAVExtract.extractionTools = {
-    KitchenKnife = true,
-    HuntingKnife = true,
-    Scalpel = true,
-    FlintKnife = true,
-}
-
 local function isUsableTool(item)
-    return FAVExtract.extractionTools[item:getType()] == true and item:getCondition() > 0
+    return FAVExtractTimedAction.isExtractionTool(item) and item:getCondition() > 0
 end
 
 local function isUsableProperTool(item)

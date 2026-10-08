@@ -10,7 +10,16 @@ FAVExtractTimedAction.properTools = { Scalpel = true }
 
 -- One DNA extraction per corpse: the corpse is kept and marked in its mod data.
 function FAVExtractTimedAction.isSampled(corpse)
+    if not FAVUtils.getOption("OneExtractionPerCorpse") then return false end
     return corpse ~= nil and corpse:getModData().FAVSampled == true
+end
+
+-- #3: any sharp knife (Build 42 "sharpknife" tag, incl. other mods' knives) or a scalpel
+function FAVExtractTimedAction.isExtractionTool(item)
+    if not item then return false end
+    if FAVExtractTimedAction.properTools[item:getType()] then return true end
+    if ItemTag and ItemTag.SHARP_KNIFE and item:hasTag(ItemTag.SHARP_KNIFE) then return true end
+    return false
 end
 
 function FAVExtractTimedAction.isProperTool(item)
@@ -55,7 +64,8 @@ function FAVExtractTimedAction:complete()
     local character = self.character
     addXp(character, Perks.Doctor, 2 + ZombRand(5))
 
-    if ZombRand(25) < character:getPerkLevel(Perks.Doctor) + 5 then
+    local chance = FAVUtils.getOption("ExtractBaseChance") + FAVUtils.getOption("ExtractChancePerLevel") * character:getPerkLevel(Perks.Doctor)
+    if ZombRand(100) < chance then
         FAVUtils.addItem(character, "FAVACCINE.LooseZombieCells")
     end
 

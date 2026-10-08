@@ -7,5 +7,15 @@
     "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "Effectiveness Simple Vaccine",
     "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "Adjust the effectiveness of the Simple Zombie Vaccine. Number equals maximum percentage chance vaccine has of preventing zombification",
     "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "Effectiveness Perfect Vaccine",
-    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Adjust the effectiveness of the Perfect Zombie Vaccine. Number equals maximum percentage chance vaccine has of preventing zombification"
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Adjust the effectiveness of the Perfect Zombie Vaccine. Number equals maximum percentage chance vaccine has of preventing zombification",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays": "Days for immunity to build up",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays_tooltip": "How many days a dose takes to reach full strength.",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays": "Days for immunity to fade",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays_tooltip": "How many days full immunity takes to fade back to nothing.",
+    "Sandbox_SimpleVaccines_ExtractBaseChance": "DNA extraction chance (%)",
+    "Sandbox_SimpleVaccines_ExtractBaseChance_tooltip": "Chance to get zombie cells from a corpse at First Aid level 0.",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel": "Extra extraction chance per First Aid level (%)",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel_tooltip": "Added to the extraction chance for each First Aid level.",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse": "One DNA extraction per corpse",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse_tooltip": "Each corpse can only be sampled once."
 }

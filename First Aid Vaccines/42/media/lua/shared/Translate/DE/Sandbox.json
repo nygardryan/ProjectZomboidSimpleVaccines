@@ -7,5 +7,15 @@
     "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "Wirksamkeit: Einfacher Impfstoff",
     "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "Legt fest, wie wirksam dieser Impfstoff ist. Der Wert ist die maximale prozentuale Chance, eine Zombifizierung zu verhindern.",
     "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "Wirksamkeit: Perfekter Impfstoff",
-    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Legt fest, wie wirksam dieser Impfstoff ist. Der Wert ist die maximale prozentuale Chance, eine Zombifizierung zu verhindern."
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Legt fest, wie wirksam dieser Impfstoff ist. Der Wert ist die maximale prozentuale Chance, eine Zombifizierung zu verhindern.",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays": "Tage bis zur vollen Immunität",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays_tooltip": "Wie viele Tage eine Dosis braucht, um ihre volle Wirkung zu erreichen.",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays": "Tage bis die Immunität nachlässt",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays_tooltip": "Wie viele Tage es dauert, bis die volle Immunität vollständig nachgelassen hat.",
+    "Sandbox_SimpleVaccines_ExtractBaseChance": "Chance auf DNA-Entnahme (%)",
+    "Sandbox_SimpleVaccines_ExtractBaseChance_tooltip": "Chance, bei Erster Hilfe Stufe 0 Zombiezellen aus einer Leiche zu gewinnen.",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel": "Zusätzliche Chance pro Erste-Hilfe-Stufe (%)",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel_tooltip": "Wird für jede Stufe in Erster Hilfe zur Entnahmechance addiert.",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse": "Eine DNA-Entnahme pro Leiche",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse_tooltip": "Jede Leiche kann nur einmal beprobt werden."
 }

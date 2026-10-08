@@ -7,5 +7,15 @@
     "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "効果: 簡易ワクチン",
     "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "このワクチンの効果を調整します。数値はゾンビ化を防ぐ最大確率（%）です。",
     "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "効果: 完璧なワクチン",
-    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "このワクチンの効果を調整します。数値はゾンビ化を防ぐ最大確率（%）です。"
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "このワクチンの効果を調整します。数値はゾンビ化を防ぐ最大確率（%）です。",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays": "免疫が形成されるまでの日数",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays_tooltip": "ワクチンが最大効果に達するまでの日数です。",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays": "免疫が消えるまでの日数",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays_tooltip": "最大の免疫が完全に消えるまでの日数です。",
+    "Sandbox_SimpleVaccines_ExtractBaseChance": "DNA抽出確率（%）",
+    "Sandbox_SimpleVaccines_ExtractBaseChance_tooltip": "応急手当レベル0で死体からゾンビ細胞を得られる確率です。",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel": "応急手当レベルごとの追加確率（%）",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel_tooltip": "応急手当のレベルごとに抽出確率へ加算されます。",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse": "死体1体につきDNA抽出1回",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse_tooltip": "各死体からは1回だけサンプルを採取できます。"
 }

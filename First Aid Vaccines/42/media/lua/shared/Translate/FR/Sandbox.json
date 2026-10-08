@@ -7,5 +7,15 @@
     "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "Efficacité : Vaccin simple",
     "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "Règle l'efficacité de ce vaccin. La valeur correspond à la chance maximale, en pourcentage, d'empêcher la zombification.",
     "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "Efficacité : Vaccin parfait",
-    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Règle l'efficacité de ce vaccin. La valeur correspond à la chance maximale, en pourcentage, d'empêcher la zombification."
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Règle l'efficacité de ce vaccin. La valeur correspond à la chance maximale, en pourcentage, d'empêcher la zombification.",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays": "Jours pour développer l'immunité",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays_tooltip": "Nombre de jours nécessaires pour qu'une dose atteigne son efficacité maximale.",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays": "Jours avant la disparition de l'immunité",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays_tooltip": "Nombre de jours nécessaires pour que l'immunité complète disparaisse.",
+    "Sandbox_SimpleVaccines_ExtractBaseChance": "Chance d'extraction d'ADN (%)",
+    "Sandbox_SimpleVaccines_ExtractBaseChance_tooltip": "Chance d'obtenir des cellules zombies d'un cadavre avec Premiers secours au niveau 0.",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel": "Chance supplémentaire par niveau de Premiers secours (%)",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel_tooltip": "S'ajoute à la chance d'extraction pour chaque niveau de Premiers secours.",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse": "Une extraction d'ADN par cadavre",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse_tooltip": "Chaque cadavre ne peut être prélevé qu'une seule fois."
 }

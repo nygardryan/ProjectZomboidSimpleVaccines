@@ -7,5 +7,15 @@
     "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "Eficacia de la vacuna simple",
     "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "Ajusta la eficacia de la vacuna zombi simple. El número equivale al porcentaje máximo de probabilidad que tiene la vacuna de prevenir la zombificación",
     "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "Eficacia de la vacuna perfecta",
-    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Ajusta la eficacia de la vacuna zombie perfecta. El número equivale al porcentaje máximo de probabilidad que tiene la vacuna de prevenir la zombificación"
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Ajusta la eficacia de la vacuna zombie perfecta. El número equivale al porcentaje máximo de probabilidad que tiene la vacuna de prevenir la zombificación",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays": "Días para desarrollar inmunidad",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays_tooltip": "Cuántos días tarda una dosis en alcanzar su máxima eficacia.",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays": "Días para perder la inmunidad",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays_tooltip": "Cuántos días tarda la inmunidad completa en desaparecer.",
+    "Sandbox_SimpleVaccines_ExtractBaseChance": "Probabilidad de extraer ADN (%)",
+    "Sandbox_SimpleVaccines_ExtractBaseChance_tooltip": "Probabilidad de obtener células zombi de un cadáver con Primeros auxilios nivel 0.",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel": "Probabilidad extra por nivel de Primeros auxilios (%)",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel_tooltip": "Se suma a la probabilidad de extracción por cada nivel de Primeros auxilios.",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse": "Una extracción de ADN por cadáver",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse_tooltip": "Cada cadáver solo se puede muestrear una vez."
 }
