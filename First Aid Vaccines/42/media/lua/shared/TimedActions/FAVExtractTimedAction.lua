@@ -29,8 +29,9 @@ function FAVExtractTimedAction:update()
 end
 
 function FAVExtractTimedAction:start()
-    self:setActionAnim("Loot")
-    self.character:SetVariable("LootPosition", "Low")
+    -- custom kneeling dissection clip (Bob_FAV_ExtractDNA) with the knife/scalpel in the right hand
+    self:setActionAnim("FAVExtractDNA")
+    self:setOverrideHandModels(self.extractionTool, nil)
 end
 
 function FAVExtractTimedAction:stop()
@@ -73,7 +74,7 @@ function FAVExtractTimedAction:getDuration()
     if self.character:isTimedActionInstant() then
         return 1
     end
-    return 200
+    return 256      -- two loops of the 2.67 s Bob_FAV_ExtractDNA clip
 end
 
 function FAVExtractTimedAction:new(character, extractionTool, corpse)

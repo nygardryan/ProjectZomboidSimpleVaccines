@@ -7,5 +7,6 @@
     "UI_FAV_BOILED": "Celulas zombie hervidas. 15% efectivas al 7mo día de consumidas, bajando su efectividad hasta llegar al mes (0%)",
     "UI_FAV_CELLS": "Celulas zombie",
     "UI_FAV_SYRINGE": "Jeringa vacia",
-    "UI_FAV_DIRTY_SYRINGE": "Jeringa sucia"
+    "UI_FAV_DIRTY_SYRINGE": "Jeringa sucia",
+    "UI_FAV_Inject": "Inyectar"
 }

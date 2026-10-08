@@ -13,6 +13,8 @@ module FAVACCINE
         Icon = RedCell1,
         Medical = true,
         Tooltip = UI_FAV_CELLS,
+        StaticModel = PetriCells,
+        WorldStaticModel = PetriCells,
     }
 
     item BoiledZombieCells
@@ -23,48 +25,48 @@ module FAVACCINE
         Icon = BoiledCell1,
         CantBeFrozen = true,
         CustomContextMenu = Take,
+        EatType = EatSmall,
         Medical = true,
         Tooltip = UI_FAV_BOILED,
         OnEat = FAVConsumeVaccine,
+        StaticModel = PetriBoiled,
+        WorldStaticModel = PetriBoiled,
     }
 
     item CrudeVaccine
     {
         DisplayCategory = FirstAid,
-        ItemType = base:food,
+        ItemType = base:normal,
         Weight = 0.1,
         Icon = VaccineGreen1Small,
-        CantBeFrozen = true,
-        CustomContextMenu = Take,
         Medical = true,
         Tooltip = UI_FAV_CRUDE,
-        OnEat = FAVConsumeVaccine,
+        StaticModel = SyringeCrude,
+        WorldStaticModel = SyringeCrude_World,
     }
 
     item ZombieVaccine
     {
         DisplayCategory = FirstAid,
-        ItemType = base:food,
+        ItemType = base:normal,
         Weight = 0.1,
         Icon = VaccinePurple1Small,
-        CantBeFrozen = true,
-        CustomContextMenu = Take,
         Medical = true,
         Tooltip = UI_FAV_NORMAL,
-        OnEat = FAVConsumeVaccine,
+        StaticModel = SyringeSimple,
+        WorldStaticModel = SyringeSimple_World,
     }
 
     item PerfectedZombieVaccine
     {
         DisplayCategory = FirstAid,
-        ItemType = base:food,
+        ItemType = base:normal,
         Weight = 0.1,
         Icon = VaccineYellow1Small,
-        CantBeFrozen = true,
-        CustomContextMenu = Take,
         Medical = true,
         Tooltip = UI_FAV_PERFECT,
-        OnEat = FAVConsumeVaccine,
+        StaticModel = SyringePerfect,
+        WorldStaticModel = SyringePerfect_World,
     }
 
     item EmptySyringe
@@ -74,6 +76,8 @@ module FAVACCINE
         Weight = 0.1,
         Icon = SyringeEmpty1,
         Tooltip = UI_FAV_SYRINGE,
+        StaticModel = SyringeEmpty,
+        WorldStaticModel = SyringeEmpty_World,
     }
 
     item DirtySyringe
@@ -83,5 +87,7 @@ module FAVACCINE
         Weight = 0.1,
         Icon = SyringeDirty1,
         Tooltip = UI_FAV_DIRTY_SYRINGE,
+        StaticModel = SyringeDirty,
+        WorldStaticModel = SyringeDirty_World,
     }
 }

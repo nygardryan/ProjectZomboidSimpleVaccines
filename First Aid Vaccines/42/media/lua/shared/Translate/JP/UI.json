@@ -7,5 +7,6 @@
     "UI_FAV_BOILED": "安全のために煮沸したゾンビ細胞。わずかな自然免疫が得られる",
     "UI_FAV_CELLS": "ゾンビ細胞…こんなもの何に使うんだ？",
     "UI_FAV_SYRINGE": "空の注射器",
-    "UI_FAV_DIRTY_SYRINGE": "汚れた注射器。誰かが使ったものだ"
+    "UI_FAV_DIRTY_SYRINGE": "汚れた注射器。誰かが使ったものだ",
+    "UI_FAV_Inject": "注射する"
 }

@@ -47,3 +47,31 @@ function FAVExtract.doMenu(playerNum, context, worldobjects, test)
 end
 
 Events.OnFillWorldObjectContextMenu.Add(FAVExtract.doMenu)
+
+-- Inventory: right-click a vaccine -> "Inject" (custom FAVInject animation)
+require "TimedActions/FAVInjectAction"
+
+local injectable = {
+    ["FAVACCINE.CrudeVaccine"] = true,
+    ["FAVACCINE.ZombieVaccine"] = true,
+    ["FAVACCINE.PerfectedZombieVaccine"] = true,
+}
+
+local function onInject(item, playerNum)
+    local playerObj = getSpecificPlayer(playerNum)
+    ISInventoryPaneContextMenu.transferIfNeeded(playerObj, item)
+    ISTimedActionQueue.add(FAVInjectAction:new(playerObj, item))
+end
+
+local function onFillInventoryMenu(playerNum, context, items)
+    for _, v in ipairs(items) do
+        local item = v
+        if not instanceof(v, "InventoryItem") then item = v.items[1] end
+        if item and injectable[item:getFullType()] then
+            context:addOption(getText("UI_FAV_Inject"), item, onInject, playerNum)
+            return
+        end
+    end
+end
+
+Events.OnFillInventoryObjectContextMenu.Add(onFillInventoryMenu)

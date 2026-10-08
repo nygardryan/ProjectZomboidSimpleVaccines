@@ -1,0 +1,29 @@
+module Base
+{
+    timedAction FAVCleanSyringe
+    {
+        metabolics = LightDomestic,
+        actionAnim = ScrubClothWithSoap,
+        prop1 = FAVACCINE.SyringeDirty,
+        prop2 = Base.DishCloth_Hand,
+        sound = FirstAidCleanRag,
+    }
+
+    timedAction FAVBoilZombieCells
+    {
+        metabolics = LightDomestic,
+        actionAnim = MixingBowl,
+        prop1 = Base.Spoon,
+        prop2 = Base.SaucePan,
+        sound = CraftPrepareCooking,
+    }
+
+    timedAction FAVMakeVaccine
+    {
+        metabolics = SedentaryActivity,
+        actionAnim = MixFluids,
+        prop1 = FAVACCINE.SyringeEmpty,
+        prop2 = Base.PillBottle,
+        sound = FirstAidApplyAlcohol,
+    }
+}

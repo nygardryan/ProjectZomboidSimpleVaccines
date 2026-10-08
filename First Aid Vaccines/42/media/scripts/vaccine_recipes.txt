@@ -7,7 +7,7 @@ module FAVACCINE
 
     craftRecipe FAVCleanSyringe
     {
-        timedAction = Making,
+        timedAction = FAVCleanSyringe,
         time = 70,
         Tags = InHandCraft;Health;CanBeDoneFromFloor,
         category = Medical,
@@ -27,7 +27,7 @@ module FAVACCINE
 
     craftRecipe FAVBoilZombieCells
     {
-        timedAction = Making,
+        timedAction = FAVBoilZombieCells,
         time = 70,
         Tags = InHandCraft;Health;CanBeDoneFromFloor,
         category = Medical,
@@ -48,7 +48,7 @@ module FAVACCINE
 
     craftRecipe FAVCreateCrudeVaccine
     {
-        timedAction = Making,
+        timedAction = FAVMakeVaccine,
         time = 150,
         Tags = AnySurfaceCraft;Health,
         category = Medical,
@@ -70,7 +70,7 @@ module FAVACCINE
 
     craftRecipe FAVCreateSimpleVaccine
     {
-        timedAction = Making,
+        timedAction = FAVMakeVaccine,
         time = 170,
         Tags = AnySurfaceCraft;Health,
         category = Medical,
@@ -93,7 +93,7 @@ module FAVACCINE
 
     craftRecipe FAVCreateEffectiveVaccine
     {
-        timedAction = Making,
+        timedAction = FAVMakeVaccine,
         time = 200,
         Tags = AnySurfaceCraft;Health,
         category = Medical,

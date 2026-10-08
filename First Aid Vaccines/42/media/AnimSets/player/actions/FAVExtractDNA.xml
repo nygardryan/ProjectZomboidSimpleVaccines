@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>FAVExtractDNA</m_Name>
+	<m_AnimName>Bob_FAV_ExtractDNA</m_AnimName>
+	<m_Looped>true</m_Looped>
+	<m_BlendTime>0.50</m_BlendTime>
+	<m_SpeedScale>1.00</m_SpeedScale>
+	<m_Conditions x_name="8594cee1-7069-485e-a7fb-1031e9175d22">
+		<m_Name>PerformingAction</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>FAVExtractDNA</m_Value>
+	</m_Conditions>
+	<m_Events x_name="d73347c8-e086-412e-845c-7d9135b62b74">
+		<m_EventName>SetVariable</m_EventName>
+		<m_Time>Start</m_Time>
+		<m_ParameterValue>requiresSlowIdleBlend=true</m_ParameterValue>
+	</m_Events>
+	<m_SubStateBoneWeights>
+		<boneName>Dummy01</boneName>
+	</m_SubStateBoneWeights>
+	<m_SubStateBoneWeights>
+		<boneName>Translation_Data</boneName>
+	</m_SubStateBoneWeights>
+</animNode>

@@ -7,5 +7,6 @@
     "UI_FAV_BOILED": "Des cellules zombies bouillies par sécurité, offrent un peu d'immunité naturelle",
     "UI_FAV_CELLS": "Des cellules zombies... pourquoi voudrais-je ça ?",
     "UI_FAV_SYRINGE": "Une seringue vide",
-    "UI_FAV_DIRTY_SYRINGE": "Une seringue sale, quelqu'un l'a déjà utilisée"
+    "UI_FAV_DIRTY_SYRINGE": "Une seringue sale, quelqu'un l'a déjà utilisée",
+    "UI_FAV_Inject": "Injecter"
 }
