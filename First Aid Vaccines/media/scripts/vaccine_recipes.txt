@@ -108,7 +108,7 @@ module FAVACCINE
     }
 
 
-    recipe Create Effective Zombie Vaccine
+    recipe Create Perfect Zombie Vaccine
     {
         FAVACCINE.EmptySyringe=1,
         FAVACCINE.BoiledZombieCells=4,
@@ -123,7 +123,7 @@ module FAVACCINE
         OnCreate:FavGiveXP,
     }
 
-     recipe Create Effective Zombie Vaccine
+     recipe Create Perfect Zombie Vaccine
     {
         FAVACCINE.EmptySyringe=1,
         FAVACCINE.BoiledZombieCells=4,

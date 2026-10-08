@@ -10,31 +10,45 @@ local function moodleFrameworkActive()
     return mods:contains("MoodleFramework") or mods:contains("\\MoodleFramework")
 end
 
+-- Moodle Framework is optional and has had Lua errors on recent Build 42 versions, so every
+-- call into it is guarded: if it's missing or broken, the vaccine mechanics keep working.
 if moodleFrameworkActive() then
     local ok = pcall(require, "MF_ISMoodle")
-    if ok and MF and MF.createMoodle then
-        MF.createMoodle(FAVMoodle.NAME)
-        FAVMoodle.enabled = true
+    if ok and MF and MF.createMoodle and MF.getMoodle then
+        FAVMoodle.enabled = pcall(MF.createMoodle, FAVMoodle.NAME)
+    end
+end
+
+local function applyMoodle(player)
+    local moodle = MF.getMoodle(FAVMoodle.NAME, player:getPlayerNum())
+    if not moodle or not moodle.setValue then return end
+    local function chevron(up)
+        -- not part of the framework's documented Build 42 API; only use it if it exists
+        if moodle.setChevronIsUp then moodle:setChevronIsUp(up) end
+    end
+
+    local md = FAVUtils.InitializeTable(player)
+    if md.current_vaccine_level > (md.vaccine_power * 0.7) then
+        moodle:setValue(1.0)
+        chevron(md.vac_increasing == 1)
+    elseif md.current_vaccine_level > 0 and md.vac_increasing == 1 then
+        moodle:setValue(0.8)
+        chevron(true)
+    elseif md.current_vaccine_level > 0 then
+        moodle:setValue(0.6)
+        chevron(false)
+    else
+        moodle:setValue(0.5)
     end
 end
 
 function FAVMoodle.update(player)
     if not FAVMoodle.enabled or not player or not player:isLocalPlayer() then return end
-    local moodle = MF.getMoodle(FAVMoodle.NAME, player:getPlayerNum())
-    if not moodle then return end
-
-    local md = FAVUtils.InitializeTable(player)
-    if md.current_vaccine_level > (md.vaccine_power * 0.7) then
-        moodle:setValue(1.0)
-        moodle:setChevronIsUp(md.vac_increasing == 1)
-    elseif md.current_vaccine_level > 0 and md.vac_increasing == 1 then
-        moodle:setValue(0.8)
-        moodle:setChevronIsUp(true)
-    elseif md.current_vaccine_level > 0 then
-        moodle:setValue(0.6)
-        moodle:setChevronIsUp(false)
-    else
-        moodle:setValue(0.5)
+    local ok, err = pcall(applyMoodle, player)
+    if not ok then
+        -- stop calling a broken framework; log once so it can be reported
+        FAVMoodle.enabled = false
+        print("[FAVACCINE] Moodle Framework error, immunity moodle disabled: " .. tostring(err))
     end
 end
 

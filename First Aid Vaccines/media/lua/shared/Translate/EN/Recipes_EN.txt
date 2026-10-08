@@ -3,5 +3,5 @@ Recipes_EN = {
     Recipe_Boil_Zombie_Cells = "Boil Zombie Cells",
     Recipe_Create_Crude_Zombie_Vaccine = "Create Crude Zombie Vaccine",
     Recipe_Create_Simple_Zombie_Vaccine = "Create Simple Zombie Vaccine",
-    Recipe_Create_Effective_Zombie_Vaccine = "Create Effective Zombie Vaccine",
+    Recipe_Create_Perfect_Zombie_Vaccine = "Create Perfect Zombie Vaccine",
 }

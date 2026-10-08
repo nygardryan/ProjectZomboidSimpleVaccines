@@ -3,5 +3,5 @@ Recipes_ES = {
     Recipe_Boil_Zombie_Cells = "Hervir celulas zombie",
     Recipe_Create_Crude_Zombie_Vaccine = "Crear vacuna simple",
     Recipe_Create_Simple_Zombie_Vaccine = "Crear vacuna basica",
-    Recipe_Create_Effective_Zombie_Vaccine = "Crear vacuna avanzada",
+    Recipe_Create_Perfect_Zombie_Vaccine = "Crear vacuna avanzada",
 }

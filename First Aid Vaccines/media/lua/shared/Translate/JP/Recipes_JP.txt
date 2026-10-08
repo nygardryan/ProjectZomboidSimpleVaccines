@@ -3,5 +3,5 @@ Recipes_JP = {
     Recipe_Boil_Zombie_Cells = "ゾンビ細胞を煮沸する",
     Recipe_Create_Crude_Zombie_Vaccine = "粗製ゾンビワクチンを作る",
     Recipe_Create_Simple_Zombie_Vaccine = "簡易ゾンビワクチンを作る",
-    Recipe_Create_Effective_Zombie_Vaccine = "高性能ゾンビワクチンを作る",
+    Recipe_Create_Perfect_Zombie_Vaccine = "完璧なゾンビワクチンを作る",
 }
