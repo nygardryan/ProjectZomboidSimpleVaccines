@@ -1,0 +1,21 @@
+{
+    "Sandbox_SimpleVaccines": "Simple Vaccines",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness": "Skuteczność: gotowane komórki zombie",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip": "Określa skuteczność tej szczepionki. Wartość to maksymalna procentowa szansa na zapobieżenie zombifikacji.",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness": "Skuteczność: prymitywna szczepionka",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip": "Określa skuteczność tej szczepionki. Wartość to maksymalna procentowa szansa na zapobieżenie zombifikacji.",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "Skuteczność: prosta szczepionka",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "Określa skuteczność tej szczepionki. Wartość to maksymalna procentowa szansa na zapobieżenie zombifikacji.",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "Skuteczność: doskonała szczepionka",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Określa skuteczność tej szczepionki. Wartość to maksymalna procentowa szansa na zapobieżenie zombifikacji.",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays": "Dni do pełnej odporności",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays_tooltip": "Ile dni potrzeba, aby dawka osiągnęła pełną skuteczność.",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays": "Dni do zaniku odporności",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays_tooltip": "Ile dni potrzeba, aby pełna odporność całkowicie zanikła.",
+    "Sandbox_SimpleVaccines_ExtractBaseChance": "Szansa na pobranie DNA (%)",
+    "Sandbox_SimpleVaccines_ExtractBaseChance_tooltip": "Szansa na zdobycie komórek zombie ze zwłok przy pierwszej pomocy na poziomie 0.",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel": "Dodatkowa szansa za poziom pierwszej pomocy (%)",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel_tooltip": "Dodawana do szansy na pobranie za każdy poziom pierwszej pomocy.",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse": "Jedno pobranie DNA na zwłoki",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse_tooltip": "Z każdych zwłok można pobrać próbkę tylko raz."
+}

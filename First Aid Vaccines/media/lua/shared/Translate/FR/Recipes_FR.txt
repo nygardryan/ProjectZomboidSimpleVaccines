@@ -1,0 +1,7 @@
+Recipes_FR = {
+    Recipe_Clean_Syringe = "Nettoyer la seringue",
+    Recipe_Boil_Zombie_Cells = "Faire bouillir des cellules zombies",
+    Recipe_Create_Crude_Zombie_Vaccine = "Créer un vaccin anti-zombie rudimentaire",
+    Recipe_Create_Simple_Zombie_Vaccine = "Créer un vaccin anti-zombie simple",
+    Recipe_Create_Perfect_Zombie_Vaccine = "Créer un vaccin anti-zombie parfait",
+}

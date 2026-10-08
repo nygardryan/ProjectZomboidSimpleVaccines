@@ -1,0 +1,8 @@
+name=Simple Vaccines
+id=FAVACCINE
+poster=poster.png
+icon=icon.png
+description=Adds vaccination mechanics and recipes and more ways to improve first aid skill
+author=BlueBerry Gravy
+modversion=2.0
+versionMin=42.0.0

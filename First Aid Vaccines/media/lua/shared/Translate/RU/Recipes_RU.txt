@@ -1,0 +1,7 @@
+Recipes_RU = {
+    Recipe_Clean_Syringe = "Очистить шприц",
+    Recipe_Boil_Zombie_Cells = "Сварить зомби-клетки",
+    Recipe_Create_Crude_Zombie_Vaccine = "Создать грубую вакцину от зомби",
+    Recipe_Create_Simple_Zombie_Vaccine = "Создать простую вакцину от зомби",
+    Recipe_Create_Perfect_Zombie_Vaccine = "Создать идеальную вакцину от зомби",
+}

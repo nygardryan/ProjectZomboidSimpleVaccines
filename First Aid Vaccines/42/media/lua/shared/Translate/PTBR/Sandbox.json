@@ -1,0 +1,21 @@
+{
+    "Sandbox_SimpleVaccines": "Simple Vaccines",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness": "Eficácia: Células Zumbi Fervidas",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip": "Ajusta a eficácia desta vacina. O número é a chance máxima, em porcentagem, de impedir a zumbificação.",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness": "Eficácia: Vacina Rudimentar",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip": "Ajusta a eficácia desta vacina. O número é a chance máxima, em porcentagem, de impedir a zumbificação.",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "Eficácia: Vacina Simples",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "Ajusta a eficácia desta vacina. O número é a chance máxima, em porcentagem, de impedir a zumbificação.",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "Eficácia: Vacina Perfeita",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Ajusta a eficácia desta vacina. O número é a chance máxima, em porcentagem, de impedir a zumbificação.",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays": "Dias para a imunidade se formar",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays_tooltip": "Quantos dias uma dose leva para atingir a eficácia máxima.",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays": "Dias para a imunidade acabar",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays_tooltip": "Quantos dias a imunidade total leva para desaparecer.",
+    "Sandbox_SimpleVaccines_ExtractBaseChance": "Chance de extrair DNA (%)",
+    "Sandbox_SimpleVaccines_ExtractBaseChance_tooltip": "Chance de obter células zumbi de um cadáver com Primeiros Socorros nível 0.",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel": "Chance extra por nível de Primeiros Socorros (%)",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel_tooltip": "Somada à chance de extração para cada nível de Primeiros Socorros.",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse": "Uma extração de DNA por cadáver",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse_tooltip": "Cada cadáver só pode ser amostrado uma vez."
+}

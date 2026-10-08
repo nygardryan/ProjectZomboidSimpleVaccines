@@ -1,0 +1,18 @@
+{
+    "Moodles_vaccine_moodle_2_Good_lvl1": "免疫力下降",
+    "Moodles_vaccine_moodle_2_Good_desc_lvl1": "你仍有一些免疫力，但应该再接种一剂疫苗",
+    "Moodles_vaccine_moodle_2_Good_lvl2": "免疫力良好",
+    "Moodles_vaccine_moodle_2_Good_desc_lvl2": "你的免疫力良好",
+    "Moodles_vaccine_moodle_2_Good_lvl3": "免疫力上升",
+    "Moodles_vaccine_moodle_2_Good_desc_lvl3": "你对病毒的免疫力正在提升",
+    "Moodles_vaccine_moodle_2_Good_lvl4": "免疫力巅峰",
+    "Moodles_vaccine_moodle_2_Good_desc_lvl4": "当前疫苗使你对病毒的免疫力达到巅峰",
+    "Moodles_vaccine_moodle_2_Bad_lvl1": "无免疫力",
+    "Moodles_vaccine_moodle_2_Bad_desc_lvl1": "你没有免疫力，请接种疫苗",
+    "Moodles_vaccine_moodle_2_Bad_lvl2": "无免疫力",
+    "Moodles_vaccine_moodle_2_Bad_desc_lvl2": "你没有免疫力，请接种疫苗",
+    "Moodles_vaccine_moodle_2_Bad_lvl3": "无免疫力",
+    "Moodles_vaccine_moodle_2_Bad_desc_lvl3": "你没有免疫力，请接种疫苗",
+    "Moodles_vaccine_moodle_2_Bad_lvl4": "无免疫力",
+    "Moodles_vaccine_moodle_2_Bad_desc_lvl4": "你没有免疫力，请接种疫苗"
+}

@@ -1,0 +1,11 @@
+UI_DE = {
+    UI_FAV_Cured = "Du hast dich erfolgreich vom Zombievirus erholt",
+    UI_FAV_Extract = "DNA-Extraktion versuchen",
+    UI_FAV_PERFECT = "Ein Impfstoff gegen das Zombievirus, bietet beträchtliche Resistenz gegen das Virus",
+    UI_FAV_NORMAL = "Ein Impfstoff gegen das Zombievirus, bietet gute Resistenz gegen das Virus",
+    UI_FAV_CRUDE = "Ein primitiver Impfstoff gegen das Zombievirus, bietet etwas Immunität",
+    UI_FAV_BOILED = "Zur Sicherheit abgekochte Zombiezellen, bieten etwas natürliche Immunität",
+    UI_FAV_CELLS = "Zombiezellen – wozu sollte ich die wollen?",
+    UI_FAV_SYRINGE = "Eine leere Spritze",
+    UI_FAV_DIRTY_SYRINGE = "Eine schmutzige Spritze, jemand hat sie schon benutzt",
+}

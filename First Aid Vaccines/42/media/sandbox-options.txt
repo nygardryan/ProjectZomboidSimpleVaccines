@@ -1,0 +1,98 @@
+VERSION = 1,
+
+option SimpleVaccines.BoiledZombieCellsEffectiveness
+{
+	type = integer,
+	min = 1,
+	max = 100,
+	default = 15,
+
+	page = SimpleVaccines,
+	translation = SimpleVaccines_BoiledZombieCellsEffectiveness,
+}
+
+option SimpleVaccines.CrudeVaccineEffectiveness
+{
+	type = integer,
+	min = 1,
+	max = 100,
+	default = 35,
+
+	page = SimpleVaccines,
+	translation = SimpleVaccines_CrudeVaccineEffectiveness,
+}
+
+option SimpleVaccines.SimpleVaccineEffectiveness
+{
+	type = integer,
+	min = 1,
+	max = 100,
+	default = 60,
+
+	page = SimpleVaccines,
+	translation = SimpleVaccines_SimpleVaccineEffectiveness,
+}
+
+option SimpleVaccines.PerfectVaccineEffectiveness
+{
+	type = integer,
+	min = 1,
+	max = 100,
+	default = 95,
+
+	page = SimpleVaccines,
+	translation = SimpleVaccines_PerfectVaccineEffectiveness,
+}
+
+option SimpleVaccines.ImmunityBuildDays
+{
+	type = integer,
+	min = 1,
+	max = 30,
+	default = 7,
+
+	page = SimpleVaccines,
+	translation = SimpleVaccines_ImmunityBuildDays,
+}
+
+option SimpleVaccines.ImmunityFadeDays
+{
+	type = integer,
+	min = 1,
+	max = 120,
+	default = 24,
+
+	page = SimpleVaccines,
+	translation = SimpleVaccines_ImmunityFadeDays,
+}
+
+option SimpleVaccines.ExtractBaseChance
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 20,
+
+	page = SimpleVaccines,
+	translation = SimpleVaccines_ExtractBaseChance,
+}
+
+option SimpleVaccines.ExtractChancePerLevel
+{
+	type = integer,
+	min = 0,
+	max = 20,
+	default = 4,
+
+	page = SimpleVaccines,
+	translation = SimpleVaccines_ExtractChancePerLevel,
+}
+
+option SimpleVaccines.OneExtractionPerCorpse
+{
+	type = boolean,
+	default = true,
+
+	page = SimpleVaccines,
+	translation = SimpleVaccines_OneExtractionPerCorpse,
+}

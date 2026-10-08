@@ -1,0 +1,14 @@
+{
+    "UI_FAV_Cured": "ゾンビウイルスから無事に回復した",
+    "UI_FAV_Extract": "DNAの抽出を試みる",
+    "UI_FAV_PERFECT": "ゾンビウイルスのワクチン。ウイルスに対してかなりの耐性が得られる",
+    "UI_FAV_NORMAL": "ゾンビウイルスのワクチン。ウイルスに対して十分な耐性が得られる",
+    "UI_FAV_CRUDE": "粗製のゾンビウイルスワクチン。ある程度の免疫が得られる",
+    "UI_FAV_BOILED": "安全のために煮沸したゾンビ細胞。わずかな自然免疫が得られる",
+    "UI_FAV_CELLS": "ゾンビ細胞…こんなもの何に使うんだ？",
+    "UI_FAV_SYRINGE": "空の注射器",
+    "UI_FAV_DIRTY_SYRINGE": "汚れた注射器。誰かが使ったものだ",
+    "UI_FAV_Inject": "注射する",
+    "UI_FAV_Dose": "免疫が形成されつつある…",
+    "UI_FAV_AlreadySampled": "この死体からはすでにDNAを抽出した"
+}

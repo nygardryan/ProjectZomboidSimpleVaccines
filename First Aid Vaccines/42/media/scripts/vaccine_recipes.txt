@@ -1,0 +1,117 @@
+module FAVACCINE
+{
+    imports
+    {
+        Base,
+    }
+
+    craftRecipe FAVCleanSyringe
+    {
+        timedAction = FAVCleanSyringe,
+        time = 70,
+        Tags = InHandCraft;Health;CanBeDoneFromFloor,
+        category = Medical,
+        OnTest = RecipeCodeOnTest.hotFluidContainer,
+        Tooltip = Tooltip_needsToBeHot,
+        inputs
+        {
+            item 1 [FAVACCINE.DirtySyringe] mode:destroy,
+            item 1 [*] mode:keep,
+            -fluid 0.5 [Water],
+        }
+        outputs
+        {
+            item 1 FAVACCINE.EmptySyringe,
+        }
+    }
+
+    craftRecipe FAVBoilZombieCells
+    {
+        timedAction = FAVBoilZombieCells,
+        time = 70,
+        Tags = InHandCraft;Health;CanBeDoneFromFloor,
+        category = Medical,
+        OnTest = RecipeCodeOnTest.hotFluidContainer,
+        Tooltip = Tooltip_needsToBeHot,
+        xpAward = Doctor:9,
+        inputs
+        {
+            item 1 [FAVACCINE.LooseZombieCells] mode:destroy,
+            item 1 [*] mode:keep,
+            -fluid 0.5 [Water],
+        }
+        outputs
+        {
+            item 1 FAVACCINE.BoiledZombieCells,
+        }
+    }
+
+    craftRecipe FAVCreateCrudeVaccine
+    {
+        timedAction = FAVMakeVaccine,
+        time = 150,
+        Tags = AnySurfaceCraft;Health,
+        category = Medical,
+        SkillRequired = Doctor:3,
+        xpAward = Doctor:9,
+        inputs
+        {
+            item 1 [FAVACCINE.EmptySyringe] mode:destroy,
+            item 2 [FAVACCINE.BoiledZombieCells] mode:destroy,
+            item 2 [Base.Pills],
+            item 1 [*] mode:keep,
+            -fluid 0.25 [Water],
+        }
+        outputs
+        {
+            item 1 FAVACCINE.CrudeVaccine,
+        }
+    }
+
+    craftRecipe FAVCreateSimpleVaccine
+    {
+        timedAction = FAVMakeVaccine,
+        time = 170,
+        Tags = AnySurfaceCraft;Health,
+        category = Medical,
+        SkillRequired = Doctor:5,
+        xpAward = Doctor:9,
+        inputs
+        {
+            item 1 [FAVACCINE.EmptySyringe] mode:destroy,
+            item 3 [FAVACCINE.BoiledZombieCells] mode:destroy,
+            item 2 [Base.Pills],
+            item 1 [Base.ComfreyCataplasm;Base.WildGarlicCataplasm;Base.PlantainCataplasm] mode:destroy,
+            item 1 [*] mode:keep,
+            -fluid 0.25 [Water],
+        }
+        outputs
+        {
+            item 1 FAVACCINE.ZombieVaccine,
+        }
+    }
+
+    craftRecipe FAVCreateEffectiveVaccine
+    {
+        timedAction = FAVMakeVaccine,
+        time = 200,
+        Tags = AnySurfaceCraft;Health,
+        category = Medical,
+        SkillRequired = Doctor:8,
+        xpAward = Doctor:9,
+        inputs
+        {
+            item 1 [FAVACCINE.EmptySyringe] mode:destroy,
+            item 4 [FAVACCINE.BoiledZombieCells] mode:destroy,
+            item 2 [Base.Pills],
+            item 2 [Base.PillsAntiDep],
+            item 1 [Base.ComfreyCataplasm;Base.WildGarlicCataplasm;Base.PlantainCataplasm] mode:destroy,
+            item 1 [*] mode:keep,
+            -fluid 0.25 [Water],
+        }
+        outputs
+        {
+            item 1 FAVACCINE.PerfectedZombieVaccine,
+        }
+    }
+}

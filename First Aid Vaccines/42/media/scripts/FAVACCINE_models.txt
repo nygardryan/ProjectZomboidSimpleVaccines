@@ -1,0 +1,130 @@
+module FAVACCINE
+{
+    imports
+    {
+        Base,
+    }
+
+    model SyringeEmpty
+    {
+        mesh = FAVSyringe,
+        texture = FAVSyringe_Empty,
+        attachment Bip01_Prop1
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model SyringeEmpty_World
+    {
+        mesh = FAVSyringe_World,
+        texture = FAVSyringe_Empty,
+    }
+
+    model SyringeDirty
+    {
+        mesh = FAVSyringe,
+        texture = FAVSyringe_Dirty,
+        attachment Bip01_Prop1
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model SyringeDirty_World
+    {
+        mesh = FAVSyringe_World,
+        texture = FAVSyringe_Dirty,
+    }
+
+    model SyringeCrude
+    {
+        mesh = FAVSyringe,
+        texture = FAVSyringe_Crude,
+        attachment Bip01_Prop1
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model SyringeCrude_World
+    {
+        mesh = FAVSyringe_World,
+        texture = FAVSyringe_Crude,
+    }
+
+    model SyringeSimple
+    {
+        mesh = FAVSyringe,
+        texture = FAVSyringe_Simple,
+        attachment Bip01_Prop1
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model SyringeSimple_World
+    {
+        mesh = FAVSyringe_World,
+        texture = FAVSyringe_Simple,
+    }
+
+    model SyringePerfect
+    {
+        mesh = FAVSyringe,
+        texture = FAVSyringe_Perfect,
+        attachment Bip01_Prop1
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+        attachment Bip01_Prop2
+        {
+            offset = 0.0 0.0 0.0,
+            rotate = 0.0 0.0 0.0,
+        }
+    }
+
+    model SyringePerfect_World
+    {
+        mesh = FAVSyringe_World,
+        texture = FAVSyringe_Perfect,
+    }
+
+    model PetriCells
+    {
+        mesh = FAVPetriDish,
+        texture = FAVPetri_Cells,
+    }
+
+    model PetriBoiled
+    {
+        mesh = FAVPetriDish,
+        texture = FAVPetri_Boiled,
+    }
+
+}

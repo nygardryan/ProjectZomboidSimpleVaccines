@@ -1,0 +1,9 @@
+ItemName_CN = {
+    ItemName_FAVACCINE.LooseZombieCells = "丧尸细胞",
+    ItemName_FAVACCINE.BoiledZombieCells = "煮过的丧尸细胞",
+    ItemName_FAVACCINE.CrudeVaccine = "粗制丧尸疫苗",
+    ItemName_FAVACCINE.ZombieVaccine = "简易丧尸疫苗",
+    ItemName_FAVACCINE.PerfectedZombieVaccine = "完美丧尸疫苗",
+    ItemName_FAVACCINE.EmptySyringe = "空注射器",
+    ItemName_FAVACCINE.DirtySyringe = "脏注射器",
+}

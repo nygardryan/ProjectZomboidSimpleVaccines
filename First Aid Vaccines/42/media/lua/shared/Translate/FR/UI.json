@@ -1,0 +1,14 @@
+{
+    "UI_FAV_Cured": "Vous avez guéri du virus zombie",
+    "UI_FAV_Extract": "Tenter d'extraire de l'ADN",
+    "UI_FAV_PERFECT": "Un vaccin contre le virus zombie, offre une résistance considérable au virus",
+    "UI_FAV_NORMAL": "Un vaccin contre le virus zombie, offre une bonne résistance au virus",
+    "UI_FAV_CRUDE": "Un vaccin rudimentaire contre le virus zombie, offre une certaine immunité",
+    "UI_FAV_BOILED": "Des cellules zombies bouillies par sécurité, offrent un peu d'immunité naturelle",
+    "UI_FAV_CELLS": "Des cellules zombies... pourquoi voudrais-je ça ?",
+    "UI_FAV_SYRINGE": "Une seringue vide",
+    "UI_FAV_DIRTY_SYRINGE": "Une seringue sale, quelqu'un l'a déjà utilisée",
+    "UI_FAV_Inject": "Injecter",
+    "UI_FAV_Dose": "Immunité en cours de développement...",
+    "UI_FAV_AlreadySampled": "L'ADN de ce cadavre a déjà été extrait"
+}

@@ -1,0 +1,66 @@
+[h1]Simple Vaccines[/h1]
+[b]Now supports Build 42 and Build 41.[/b]
+
+Are you tired of the uselessness of the First Aid skill in vanilla Project Zomboid? Simple Vaccines revamps the skill, letting you craft vaccines that give you a real chance of surviving a zombie bite.
+
+[h2]Features[/h2]
+[list]
+[*] [b]Craftable zombie vaccines[/b] - four tiers, from boiled zombie cells to a near-perfect vaccine
+[*] [b]Gives First Aid a purpose[/b] - better vaccines need higher First Aid, and every step trains it
+[*] [b]Immunity builds up and fades[/b] - take boosters to stay protected
+[*] [b]Custom animations[/b] (Build 42) - kneel at a corpse to extract DNA, inject a vaccine into your arm
+[*] [b]New 3D models and icons[/b] (Build 42) - syringes and petri dishes, in your hands and on the ground
+[*] [b]Sandbox options[/b] for vaccine strength, build-up and fade time, and DNA extraction
+[*] [b]Multiplayer-ready[/b] (Build 42) - the server handles immunity and cures
+[*] [b]10 languages[/b] - English, Spanish, Russian, Chinese, Brazilian Portuguese, German, French, Polish, Korean and Japanese
+[/list]
+
+[h2]How do I make a vaccine?[/h2]
+[olist]
+[*] Get a knife (any sharp knife works; on Build 41 a kitchen, hunting or flint knife) or, even better, a scalpel - a scalpel never wears out.
+[*] Right-click a dead zombie and choose [b]Attempt to Extract DNA[/b]. Each corpse can only be sampled once (Build 42), and higher First Aid means better odds.
+[*] Boil the zombie cells in a pot or saucepan of [b]very hot water[/b].
+[*] Find syringes in hospitals, clinics, pharmacies and labs - or on zombie doctors, nurses and paramedics. Dirty syringes from bins and drug labs can be cleaned in hot water.
+[*] Craft a vaccine from the boiled cells, an empty syringe, painkillers and water (higher tiers also need a poultice and antidepressants).
+[*] Right-click the vaccine and choose [b]Inject[/b] (on Build 41, [b]Take[/b]).
+[/olist]
+
+[h2]How do vaccines work?[/h2]
+After you take a vaccine, your immunity builds up over [b]7 days[/b], then slowly fades over the next [b]24 days[/b]. Take another dose as a booster to keep it up. You'll see a short message when a dose is taken and when a vaccine fights off an infection.
+
+If you get bitten or scratched while immune, you get one chance to fight off the infection. That chance is your current immunity level.
+
+[table]
+[tr][th]Vaccine[/th][th]Protection at peak[/th][th]First Aid needed[/th][/tr]
+[tr][td]Boiled Zombie Cells[/td][td]15%[/td][td]0[/td][/tr]
+[tr][td]Crude Zombie Vaccine[/td][td]35%[/td][td]3[/td][/tr]
+[tr][td]Simple Zombie Vaccine[/td][td]60%[/td][td]5[/td][/tr]
+[tr][td]Perfect Zombie Vaccine[/td][td]95%[/td][td]8[/td][/tr]
+[/table]
+All numbers above are defaults and can be changed in the sandbox options.
+
+[h2]Sandbox options[/h2]
+[list]
+[*] Effectiveness of each vaccine tier
+[*] Days for immunity to build up / to fade (Build 42)
+[*] DNA extraction chance, and extra chance per First Aid level (Build 42)
+[*] One DNA extraction per corpse - on/off (Build 42)
+[/list]
+
+[h2]Optional: Moodle Framework[/h2]
+If [b]Moodle Framework[/b] is installed, a moodle shows your immunity level. It isn't required. Note that Moodle Framework has had errors on recent Build 42 versions - if it breaks, Simple Vaccines turns the moodle off and keeps working.
+
+[h2]Build 41 vs Build 42[/h2]
+Build 41 keeps the original mod: vaccines are eaten, and DNA extraction removes the corpse. Everything new - animations, models, the Inject action, new sandbox options, multiplayer sync - is Build 42 only. Both versions have all 10 languages.
+
+[h2]For mod makers[/h2]
+Build 42 exposes a small API:
+[list]
+[*] [b]FAVUtils.getImmunity(player)[/b] - current chance (0-100) that the next infection is stopped
+[*] [b]FAVUtils.isImmunityRising(player)[/b] - true while a dose is still building up
+[*] [b]table.insert(FAVUtils.cureListeners, function(player) ... end)[/b] - called when a vaccine cures someone
+[/list]
+Works alongside mods that cure infection their own way (for example More Traits).
+
+[h2]Changelog[/h2]
+[b]2.0[/b] - Build 42 support: new crafting recipes, Inject action with a custom animation, kneeling DNA extraction animation, 3D models and icons, one extraction per corpse, any sharp knife works, new loot, new sandbox options, multiplayer support, 10 languages, dose and cure messages. Build 41 version kept, now with 10 languages.

@@ -1,0 +1,11 @@
+Sandbox_DE = {
+    Sandbox_SimpleVaccines = "Simple Vaccines",
+    Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness = "Wirksamkeit: Abgekochte Zombiezellen",
+    Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip = "Legt fest, wie wirksam dieser Impfstoff ist. Der Wert ist die maximale prozentuale Chance, eine Zombifizierung zu verhindern.",
+    Sandbox_SimpleVaccines_CrudeVaccineEffectiveness = "Wirksamkeit: Primitiver Impfstoff",
+    Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip = "Legt fest, wie wirksam dieser Impfstoff ist. Der Wert ist die maximale prozentuale Chance, eine Zombifizierung zu verhindern.",
+    Sandbox_SimpleVaccines_SimpleVaccineEffectiveness = "Wirksamkeit: Einfacher Impfstoff",
+    Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip = "Legt fest, wie wirksam dieser Impfstoff ist. Der Wert ist die maximale prozentuale Chance, eine Zombifizierung zu verhindern.",
+    Sandbox_SimpleVaccines_PerfectVaccineEffectiveness = "Wirksamkeit: Perfekter Impfstoff",
+    Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip = "Legt fest, wie wirksam dieser Impfstoff ist. Der Wert ist die maximale prozentuale Chance, eine Zombifizierung zu verhindern.",
+}

@@ -1,0 +1,21 @@
+{
+    "Sandbox_SimpleVaccines": "Simple Vaccines",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness": "Эффективность: варёные зомби-клетки",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip": "Насколько эффективна эта вакцина. Число — максимальный шанс (в процентах) предотвратить превращение в зомби.",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness": "Эффективность: грубая вакцина",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip": "Насколько эффективна эта вакцина. Число — максимальный шанс (в процентах) предотвратить превращение в зомби.",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "Эффективность: простая вакцина",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "Насколько эффективна эта вакцина. Число — максимальный шанс (в процентах) предотвратить превращение в зомби.",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "Эффективность: идеальная вакцина",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Насколько эффективна эта вакцина. Число — максимальный шанс (в процентах) предотвратить превращение в зомби.",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays": "Дней до полного иммунитета",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays_tooltip": "Сколько дней доза набирает полную силу.",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays": "Дней до исчезновения иммунитета",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays_tooltip": "Сколько дней полный иммунитет угасает до нуля.",
+    "Sandbox_SimpleVaccines_ExtractBaseChance": "Шанс извлечь ДНК (%)",
+    "Sandbox_SimpleVaccines_ExtractBaseChance_tooltip": "Шанс получить зомби-клетки из тела при навыке первой помощи 0.",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel": "Доп. шанс за уровень первой помощи (%)",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel_tooltip": "Прибавляется к шансу извлечения за каждый уровень первой помощи.",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse": "Одно извлечение ДНК на тело",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse_tooltip": "Из каждого тела можно взять образец только один раз."
+}

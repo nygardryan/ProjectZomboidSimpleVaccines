@@ -1,0 +1,14 @@
+{
+    "UI_FAV_Cured": "좀비 바이러스에서 성공적으로 회복했습니다",
+    "UI_FAV_Extract": "DNA 추출 시도",
+    "UI_FAV_PERFECT": "좀비 바이러스 백신. 바이러스에 대해 상당한 저항력을 제공합니다",
+    "UI_FAV_NORMAL": "좀비 바이러스 백신. 바이러스에 대해 좋은 저항력을 제공합니다",
+    "UI_FAV_CRUDE": "조잡한 좀비 바이러스 백신. 약간의 면역력을 제공합니다",
+    "UI_FAV_BOILED": "안전을 위해 끓인 좀비 세포. 약간의 자연 면역력을 제공합니다",
+    "UI_FAV_CELLS": "좀비 세포... 이걸 왜 원하겠어?",
+    "UI_FAV_SYRINGE": "빈 주사기",
+    "UI_FAV_DIRTY_SYRINGE": "더러운 주사기. 누군가 이미 사용했습니다",
+    "UI_FAV_Inject": "주사하기",
+    "UI_FAV_Dose": "면역력이 생기는 중...",
+    "UI_FAV_AlreadySampled": "이 시체에서는 이미 DNA를 추출했습니다"
+}

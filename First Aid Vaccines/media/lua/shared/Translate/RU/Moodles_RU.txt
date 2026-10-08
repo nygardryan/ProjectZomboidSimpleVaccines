@@ -1,0 +1,18 @@
+Moodles_RU = {
+    Moodles_vaccine_moodle_2_Good_lvl1 = "Иммунитет снижается",
+    Moodles_vaccine_moodle_2_Good_desc_lvl1 = "У вас ещё есть иммунитет, но стоит принять ещё одну вакцину",
+    Moodles_vaccine_moodle_2_Good_lvl2 = "Хороший иммунитет",
+    Moodles_vaccine_moodle_2_Good_desc_lvl2 = "У вас хороший иммунитет",
+    Moodles_vaccine_moodle_2_Good_lvl3 = "Иммунитет растёт",
+    Moodles_vaccine_moodle_2_Good_desc_lvl3 = "Ваш иммунитет к вирусу растёт",
+    Moodles_vaccine_moodle_2_Good_lvl4 = "Пиковый иммунитет",
+    Moodles_vaccine_moodle_2_Good_desc_lvl4 = "Текущая вакцина даёт вам пиковый иммунитет к вирусу",
+    Moodles_vaccine_moodle_2_Bad_lvl1 = "Нет иммунитета",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl1 = "У вас нет иммунитета. Примите вакцину",
+    Moodles_vaccine_moodle_2_Bad_lvl2 = "Нет иммунитета",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl2 = "У вас нет иммунитета. Примите вакцину",
+    Moodles_vaccine_moodle_2_Bad_lvl3 = "Нет иммунитета",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl3 = "У вас нет иммунитета. Примите вакцину",
+    Moodles_vaccine_moodle_2_Bad_lvl4 = "Нет иммунитета",
+    Moodles_vaccine_moodle_2_Bad_desc_lvl4 = "У вас нет иммунитета. Примите вакцину",
+}

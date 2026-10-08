@@ -1,0 +1,21 @@
+{
+    "Sandbox_SimpleVaccines": "Simple Vaccines",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness": "효과: 끓인 좀비 세포",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip": "이 백신의 효과를 조정합니다. 값은 좀비화를 막을 수 있는 최대 확률(%)입니다.",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness": "효과: 조잡한 백신",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip": "이 백신의 효과를 조정합니다. 값은 좀비화를 막을 수 있는 최대 확률(%)입니다.",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "효과: 간단한 백신",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "이 백신의 효과를 조정합니다. 값은 좀비화를 막을 수 있는 최대 확률(%)입니다.",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "효과: 완벽한 백신",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "이 백신의 효과를 조정합니다. 값은 좀비화를 막을 수 있는 최대 확률(%)입니다.",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays": "면역력 형성 일수",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays_tooltip": "백신이 최대 효과에 도달하는 데 걸리는 일수입니다.",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays": "면역력 소멸 일수",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays_tooltip": "최대 면역력이 완전히 사라지는 데 걸리는 일수입니다.",
+    "Sandbox_SimpleVaccines_ExtractBaseChance": "DNA 추출 확률(%)",
+    "Sandbox_SimpleVaccines_ExtractBaseChance_tooltip": "응급처치 레벨 0일 때 시체에서 좀비 세포를 얻을 확률입니다.",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel": "응급처치 레벨당 추가 확률(%)",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel_tooltip": "응급처치 레벨마다 추출 확률에 더해지는 값입니다.",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse": "시체당 DNA 추출 1회",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse_tooltip": "각 시체에서는 한 번만 표본을 채취할 수 있습니다."
+}

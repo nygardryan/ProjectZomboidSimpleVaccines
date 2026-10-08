@@ -1,0 +1,7 @@
+Recipes_PTBR = {
+    Recipe_Clean_Syringe = "Limpar Seringa",
+    Recipe_Boil_Zombie_Cells = "Ferver Células Zumbi",
+    Recipe_Create_Crude_Zombie_Vaccine = "Criar Vacina Zumbi Rudimentar",
+    Recipe_Create_Simple_Zombie_Vaccine = "Criar Vacina Zumbi Simples",
+    Recipe_Create_Perfect_Zombie_Vaccine = "Criar Vacina Zumbi Perfeita",
+}

@@ -1,0 +1,11 @@
+UI_PTBR = {
+    UI_FAV_Cured = "Você se recuperou do vírus zumbi com sucesso",
+    UI_FAV_Extract = "Tentar Extrair DNA",
+    UI_FAV_PERFECT = "Uma vacina contra o vírus zumbi, oferece resistência considerável ao vírus",
+    UI_FAV_NORMAL = "Uma vacina contra o vírus zumbi, oferece boa resistência ao vírus",
+    UI_FAV_CRUDE = "Uma vacina rudimentar contra o vírus zumbi, oferece alguma imunidade",
+    UI_FAV_BOILED = "Células zumbi fervidas por segurança, oferecem alguma imunidade natural",
+    UI_FAV_CELLS = "Células zumbi... por que eu ia querer isso?",
+    UI_FAV_SYRINGE = "Uma seringa vazia",
+    UI_FAV_DIRTY_SYRINGE = "Uma seringa suja, alguém já a usou",
+}

@@ -1,0 +1,93 @@
+module FAVACCINE
+{
+    imports
+    {
+        Base,
+    }
+
+    item LooseZombieCells
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = FAVPetriCells,
+        Medical = true,
+        Tooltip = UI_FAV_CELLS,
+        StaticModel = PetriCells,
+        WorldStaticModel = PetriCells,
+    }
+
+    item BoiledZombieCells
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        Weight = 0.1,
+        Icon = FAVPetriBoiled,
+        CantBeFrozen = true,
+        CustomContextMenu = Take,
+        EatType = EatSmall,
+        Medical = true,
+        Tooltip = UI_FAV_BOILED,
+        OnEat = FAVConsumeVaccine,
+        StaticModel = PetriBoiled,
+        WorldStaticModel = PetriBoiled,
+    }
+
+    item CrudeVaccine
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = FAVSyringeCrude,
+        Medical = true,
+        Tooltip = UI_FAV_CRUDE,
+        StaticModel = SyringeCrude,
+        WorldStaticModel = SyringeCrude_World,
+    }
+
+    item ZombieVaccine
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = FAVSyringeSimple,
+        Medical = true,
+        Tooltip = UI_FAV_NORMAL,
+        StaticModel = SyringeSimple,
+        WorldStaticModel = SyringeSimple_World,
+    }
+
+    item PerfectedZombieVaccine
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = FAVSyringePerfect,
+        Medical = true,
+        Tooltip = UI_FAV_PERFECT,
+        StaticModel = SyringePerfect,
+        WorldStaticModel = SyringePerfect_World,
+    }
+
+    item EmptySyringe
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = FAVSyringeEmpty,
+        Tooltip = UI_FAV_SYRINGE,
+        StaticModel = SyringeEmpty,
+        WorldStaticModel = SyringeEmpty_World,
+    }
+
+    item DirtySyringe
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = FAVSyringeDirty,
+        Tooltip = UI_FAV_DIRTY_SYRINGE,
+        StaticModel = SyringeDirty,
+        WorldStaticModel = SyringeDirty_World,
+    }
+}

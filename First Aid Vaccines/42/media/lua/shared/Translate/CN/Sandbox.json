@@ -1,0 +1,21 @@
+{
+    "Sandbox_SimpleVaccines": "Simple Vaccines",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness": "煮过的丧尸细胞有效性",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip": "调整该疫苗的有效性。数值为疫苗阻止尸变的最大百分比几率。",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness": "粗制疫苗有效性",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip": "调整该疫苗的有效性。数值为疫苗阻止尸变的最大百分比几率。",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "简易疫苗有效性",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "调整该疫苗的有效性。数值为疫苗阻止尸变的最大百分比几率。",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "完美疫苗有效性",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "调整该疫苗的有效性。数值为疫苗阻止尸变的最大百分比几率。",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays": "免疫力形成天数",
+    "Sandbox_SimpleVaccines_ImmunityBuildDays_tooltip": "一剂疫苗达到最大效果所需的天数。",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays": "免疫力消退天数",
+    "Sandbox_SimpleVaccines_ImmunityFadeDays_tooltip": "完全免疫力降为零所需的天数。",
+    "Sandbox_SimpleVaccines_ExtractBaseChance": "DNA提取几率（%）",
+    "Sandbox_SimpleVaccines_ExtractBaseChance_tooltip": "急救等级为0时从尸体上获得丧尸细胞的几率。",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel": "每级急救额外提取几率（%）",
+    "Sandbox_SimpleVaccines_ExtractChancePerLevel_tooltip": "每提升一级急救，提取几率增加的数值。",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse": "每具尸体只能提取一次DNA",
+    "Sandbox_SimpleVaccines_OneExtractionPerCorpse_tooltip": "每具尸体只能取样一次。"
+}

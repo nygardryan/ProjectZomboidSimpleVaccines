@@ -1,0 +1,11 @@
+UI_ES = {
+    UI_FAV_Cured = "Te has recuperado con exito del virus",
+    UI_FAV_Extract = "Intento de extracción de ADN",
+    UI_FAV_PERFECT = "Una vacuna contra el virus zombi, proporciona una resistencia considerable al virus",
+    UI_FAV_NORMAL = "Una vacuna contra el virus zombi, proporciona buena resistencia al virus",
+    UI_FAV_CRUDE = "Una vacuna rudimentaria contra el virus zombi, proporciona algo de inmunidad",
+    UI_FAV_BOILED = "Células zombi hervidas por seguridad, proporcionan algo de inmunidad natural",
+    UI_FAV_CELLS = "Celulas zombie",
+    UI_FAV_SYRINGE = "Jeringa vacia",
+    UI_FAV_DIRTY_SYRINGE = "Jeringa sucia",
+}

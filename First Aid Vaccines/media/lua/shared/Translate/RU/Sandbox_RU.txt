@@ -1,0 +1,11 @@
+Sandbox_RU = {
+    Sandbox_SimpleVaccines = "Simple Vaccines",
+    Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness = "Ёффективность: варЄные зомби-клетки",
+    Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip = "Ќасколько эффективна эта вакцина. „исло Ч максимальный шанс (в процентах) предотвратить превращение в зомби.",
+    Sandbox_SimpleVaccines_CrudeVaccineEffectiveness = "Ёффективность: груба€ вакцина",
+    Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip = "Ќасколько эффективна эта вакцина. „исло Ч максимальный шанс (в процентах) предотвратить превращение в зомби.",
+    Sandbox_SimpleVaccines_SimpleVaccineEffectiveness = "Ёффективность: проста€ вакцина",
+    Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip = "Ќасколько эффективна эта вакцина. „исло Ч максимальный шанс (в процентах) предотвратить превращение в зомби.",
+    Sandbox_SimpleVaccines_PerfectVaccineEffectiveness = "Ёффективность: идеальна€ вакцина",
+    Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip = "Ќасколько эффективна эта вакцина. „исло Ч максимальный шанс (в процентах) предотвратить превращение в зомби.",
+}

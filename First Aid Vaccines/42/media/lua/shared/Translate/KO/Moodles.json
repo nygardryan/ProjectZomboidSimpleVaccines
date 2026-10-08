@@ -1,0 +1,18 @@
+{
+    "Moodles_vaccine_moodle_2_Good_lvl1": "면역력 감소",
+    "Moodles_vaccine_moodle_2_Good_desc_lvl1": "아직 면역력이 조금 남아 있지만 백신을 다시 접종해야 합니다",
+    "Moodles_vaccine_moodle_2_Good_lvl2": "좋은 면역력",
+    "Moodles_vaccine_moodle_2_Good_desc_lvl2": "면역력이 좋습니다",
+    "Moodles_vaccine_moodle_2_Good_lvl3": "면역력 증가",
+    "Moodles_vaccine_moodle_2_Good_desc_lvl3": "바이러스에 대한 면역력이 증가하고 있습니다",
+    "Moodles_vaccine_moodle_2_Good_lvl4": "최고 면역력",
+    "Moodles_vaccine_moodle_2_Good_desc_lvl4": "현재 백신으로 바이러스에 대한 면역력이 최고 수준입니다",
+    "Moodles_vaccine_moodle_2_Bad_lvl1": "면역력 없음",
+    "Moodles_vaccine_moodle_2_Bad_desc_lvl1": "면역력이 없습니다. 백신을 접종하세요",
+    "Moodles_vaccine_moodle_2_Bad_lvl2": "면역력 없음",
+    "Moodles_vaccine_moodle_2_Bad_desc_lvl2": "면역력이 없습니다. 백신을 접종하세요",
+    "Moodles_vaccine_moodle_2_Bad_lvl3": "면역력 없음",
+    "Moodles_vaccine_moodle_2_Bad_desc_lvl3": "면역력이 없습니다. 백신을 접종하세요",
+    "Moodles_vaccine_moodle_2_Bad_lvl4": "면역력 없음",
+    "Moodles_vaccine_moodle_2_Bad_desc_lvl4": "면역력이 없습니다. 백신을 접종하세요"
+}
