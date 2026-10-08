@@ -1,0 +1,11 @@
+{
+    "Sandbox_SimpleVaccines": "Simple Vaccines",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness": "효과: 끓인 좀비 세포",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip": "이 백신의 효과를 조정합니다. 값은 좀비화를 막을 수 있는 최대 확률(%)입니다.",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness": "효과: 조잡한 백신",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip": "이 백신의 효과를 조정합니다. 값은 좀비화를 막을 수 있는 최대 확률(%)입니다.",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "효과: 간단한 백신",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "이 백신의 효과를 조정합니다. 값은 좀비화를 막을 수 있는 최대 확률(%)입니다.",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "효과: 완벽한 백신",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "이 백신의 효과를 조정합니다. 값은 좀비화를 막을 수 있는 최대 확률(%)입니다."
+}

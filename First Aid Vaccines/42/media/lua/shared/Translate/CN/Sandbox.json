@@ -1,0 +1,11 @@
+{
+    "Sandbox_SimpleVaccines": "Simple Vaccines",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness": "煮过的丧尸细胞有效性",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip": "调整该疫苗的有效性。数值为疫苗阻止尸变的最大百分比几率。",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness": "粗制疫苗有效性",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip": "调整该疫苗的有效性。数值为疫苗阻止尸变的最大百分比几率。",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "简易疫苗有效性",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "调整该疫苗的有效性。数值为疫苗阻止尸变的最大百分比几率。",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "完美疫苗有效性",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "调整该疫苗的有效性。数值为疫苗阻止尸变的最大百分比几率。"
+}

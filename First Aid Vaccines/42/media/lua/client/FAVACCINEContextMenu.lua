@@ -1,105 +1,49 @@
+-- Simple Vaccines (Build 42) - right-click a corpse to "Attempt to Extract DNA".
+require "TimedActions/FAVExtractTimedAction"
 
 local FAVExtract = {}
-local FAVCorpse = {}
 
+FAVExtract.extractionTools = {
+    KitchenKnife = true,
+    HuntingKnife = true,
+    Scalpel = true,
+    FlintKnife = true,
+}
 
-local extractionTools = {"KitchenKnife", "HuntingKnife", "Scalpel", "FlintKnife"}
-local properExtractionTools = {"Scalpel", nil}
-
-local function has_value (tab, val)
-    for index, value in ipairs(tab) do
-        if value == val then
-            return true
-        end
-    end
-
-    return false
+local function isUsableTool(item)
+    return FAVExtract.extractionTools[item:getType()] == true and item:getCondition() > 0
 end
 
-function FAVExtract.IsExtractionTool(item)
-    return has_value(extractionTools, item:getType())
+local function isUsableProperTool(item)
+    return FAVExtractTimedAction.isProperTool(item) and item:getCondition() > 0
 end
 
-function FAVExtract.IsProperTool(item)
-    return has_value(properExtractionTools, item:getType())
+-- Prefer a scalpel; otherwise any usable knife.
+function FAVExtract.findTool(playerObj)
+    local inv = playerObj:getInventory()
+    return inv:getFirstEvalRecurse(isUsableProperTool) or inv:getFirstEvalRecurse(isUsableTool)
 end
 
-function FAVExtract.ToolConditionGood(item)
-    if item:getCondition() > 0
-    then
-        return true
-    else
-        return false
-    end
-end
+function FAVExtract.doAction(worldobjects, playerNum, corpse)
+    local playerObj = getSpecificPlayer(playerNum)
+    local tool = FAVExtract.findTool(playerObj)
+    if not tool or not corpse or not corpse:getSquare() then return end
 
-function FAVExtract.FindExtractionTool(item)
-    return FAVExtract.IsExtractionTool(item) and FAVExtract.ToolConditionGood(item)
-end
-
-function FAVExtract.DamageTool(item, player)
-    if not FAVExtract.IsProperTool(item) then
-        item:setCondition(item:getCondition() - 0.01);
+    if luautils.walkAdj(playerObj, corpse:getSquare()) then
+        ISInventoryPaneContextMenu.equipWeapon(tool, true, false, playerNum)
+        ISTimedActionQueue.add(FAVExtractTimedAction:new(playerObj, tool, corpse))
     end
 end
 
+function FAVExtract.doMenu(playerNum, context, worldobjects, test)
+    if test then return end
+    local corpse = IsoObjectPicker.Instance:PickCorpse(getMouseX(), getMouseY())
+    if not corpse then return end
 
-FAVExtract.doMenu = function (player, context, worldobjects, test)
+    local playerObj = getSpecificPlayer(playerNum)
+    if not playerObj or not FAVExtract.findTool(playerObj) then return end
 
-	local corpse = IsoObjectPicker.Instance:PickCorpse(getMouseX(), getMouseY());
-	if not corpse then return end
-    FAVCorpse.corpse = corpse
-
-    local playerObj = getSpecificPlayer(player)
-    local playerInv = playerObj:getInventory()
-
-    local extractionTool = nil
-    local proper_extraction_tool = playerInv:getFirstEvalRecurse(FAVExtract.IsProperTool)
-
-    if proper_extraction_tool
-        then
-            if FAVExtract.ToolConditionGood(proper_extraction_tool)
-            then
-                extractionTool = proper_extraction_tool
-            end
-    end
-    
-    if not extractionTool
-        then
-        extractionTool = playerInv:getFirstEvalRecurse(FAVExtract.FindExtractionTool)
-    end
-
-    if extractionTool then
-		context:addOption(getText("UI_FAV_Extract"), worldobjects, FAVExtract.doAction, player);    
-	end
-	return
-end
-
-FAVExtract.doAction = function (worldobjects, player)
-	local playerObj = getSpecificPlayer(player)
-    local playerInv = playerObj:getInventory()
-    local equipped = playerObj:getPrimaryHandItem()
-
-    local proper_extraction_tool = playerInv:getFirstEvalRecurse(FAVExtract.IsProperTool)
-    if proper_extraction_tool
-        then
-            if FAVExtract.ToolConditionGood(proper_extraction_tool)
-            then
-                extractionTool = proper_extraction_tool
-            end
-    end
-    
-    if not extractionTool
-        then
-        extractionTool = playerInv:getFirstEvalRecurse(FAVExtract.FindExtractionTool)
-    end
-
-     if FAVCorpse.corpse:getSquare() and extractionTool and luautils.walkAdj(playerObj, FAVCorpse.corpse:getSquare()) then
-        ISInventoryPaneContextMenu.equipWeapon(extractionTool, true, false, playerObj:getPlayerNum());
-        ISTimedActionQueue.add(FAVExtractTimedAction:new(playerObj, extractionTool, FAVCorpse.corpse));
-
-    end
-	
+    context:addOption(getText("UI_FAV_Extract"), worldobjects, FAVExtract.doAction, playerNum, corpse)
 end
 
 Events.OnFillWorldObjectContextMenu.Add(FAVExtract.doMenu)

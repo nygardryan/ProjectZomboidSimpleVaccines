@@ -1,5 +1,5 @@
-module FAVACCINE {
-
+module FAVACCINE
+{
     imports
     {
         Base,
@@ -8,97 +8,80 @@ module FAVACCINE {
     item LooseZombieCells
     {
         DisplayCategory = FirstAid,
-        Weight  =   0.1,
-        Type    =   Normal,
-        DisplayName =   Zombie Cells,
-        Icon    =   RedCell1,
-        CantBeFrozen = TRUE,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = RedCell1,
+        Medical = true,
         Tooltip = UI_FAV_CELLS,
-        Medical = TRUE,
-        Poison = true,
-        PoisonDetectionLevel = 200,
-        PoisonPower = 4,
-        UseForPoison = 5,
-        onEat = ConsumeVaccine,
     }
-
-
 
     item BoiledZombieCells
     {
         DisplayCategory = FirstAid,
-        Weight  =   0.1,
-        Type    =   Food,
-        DisplayName =   Boiled Zombie Cells,
-        Icon    =   BoiledCell1,
-        CustomContextMenu   =   Take,
-        CantBeFrozen = TRUE,
+        ItemType = base:food,
+        Weight = 0.1,
+        Icon = BoiledCell1,
+        CantBeFrozen = true,
+        CustomContextMenu = Take,
+        Medical = true,
         Tooltip = UI_FAV_BOILED,
-        Medical = TRUE,
-        onEat = ConsumeVaccine,
+        OnEat = FAVConsumeVaccine,
     }
 
-    item CrudeVaccine 
+    item CrudeVaccine
     {
         DisplayCategory = FirstAid,
-        Weight  =   0.1,
-        Type    =   Food,
-        DisplayName =   Crude Zombie Vaccine, 
-        Icon    =   VaccineGreen1Small,
-        CustomContextMenu   =   Take,
-        CantBeFrozen = TRUE,
+        ItemType = base:food,
+        Weight = 0.1,
+        Icon = VaccineGreen1Small,
+        CantBeFrozen = true,
+        CustomContextMenu = Take,
+        Medical = true,
         Tooltip = UI_FAV_CRUDE,
-        Medical = TRUE,
-        onEat = ConsumeVaccine,
+        OnEat = FAVConsumeVaccine,
     }
 
-    item ZombieVaccine 
+    item ZombieVaccine
     {
         DisplayCategory = FirstAid,
-        Weight  =   0.1,
-        Type    =   Food,
-        DisplayName =  Simple Zombie Vaccine,
-        Icon    =   VaccinePurple1Small,
-        CustomContextMenu   =   Take,
-        CantBeFrozen = TRUE,
-        onEat = ConsumeVaccine,
+        ItemType = base:food,
+        Weight = 0.1,
+        Icon = VaccinePurple1Small,
+        CantBeFrozen = true,
+        CustomContextMenu = Take,
+        Medical = true,
         Tooltip = UI_FAV_NORMAL,
-        Medical = TRUE,
+        OnEat = FAVConsumeVaccine,
     }
 
-    item PerfectedZombieVaccine 
+    item PerfectedZombieVaccine
     {
         DisplayCategory = FirstAid,
-        Weight  =   0.1,
-        Type    =   Food,
-        DisplayName = Perfect Zombie Vaccine,
-        Icon    =   VaccineYellow1Small,
-        CustomContextMenu   =   Take,
-        CantBeFrozen = TRUE,
-        onEat = ConsumeVaccine,
+        ItemType = base:food,
+        Weight = 0.1,
+        Icon = VaccineYellow1Small,
+        CantBeFrozen = true,
+        CustomContextMenu = Take,
+        Medical = true,
         Tooltip = UI_FAV_PERFECT,
-        Medical = TRUE,
+        OnEat = FAVConsumeVaccine,
     }
 
     item EmptySyringe
     {
-        Weight = 0.1,
         DisplayCategory = Material,
-        DisplayName = Empty Syringe,
+        ItemType = base:normal,
+        Weight = 0.1,
         Icon = SyringeEmpty1,
         Tooltip = UI_FAV_SYRINGE,
-        Type = Normal,
     }
 
     item DirtySyringe
     {
-        Weight = 0.1,
         DisplayCategory = Material,
-        DisplayName = Dirty Syringe,
+        ItemType = base:normal,
+        Weight = 0.1,
         Icon = SyringeDirty1,
         Tooltip = UI_FAV_DIRTY_SYRINGE,
-        Type = Normal,
     }
-
 }
-

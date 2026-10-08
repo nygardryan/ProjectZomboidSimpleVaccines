@@ -1,0 +1,11 @@
+{
+    "Sandbox_SimpleVaccines": "Simple Vaccines",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness": "Efficacité : Cellules zombies bouillies",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip": "Règle l'efficacité de ce vaccin. La valeur correspond à la chance maximale, en pourcentage, d'empêcher la zombification.",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness": "Efficacité : Vaccin rudimentaire",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip": "Règle l'efficacité de ce vaccin. La valeur correspond à la chance maximale, en pourcentage, d'empêcher la zombification.",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "Efficacité : Vaccin simple",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "Règle l'efficacité de ce vaccin. La valeur correspond à la chance maximale, en pourcentage, d'empêcher la zombification.",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "Efficacité : Vaccin parfait",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Règle l'efficacité de ce vaccin. La valeur correspond à la chance maximale, en pourcentage, d'empêcher la zombification."
+}

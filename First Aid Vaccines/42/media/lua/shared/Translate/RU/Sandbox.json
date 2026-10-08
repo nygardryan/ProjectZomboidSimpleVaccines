@@ -1,0 +1,11 @@
+{
+    "Sandbox_SimpleVaccines": "Simple Vaccines",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness": "Эффективность: варёные зомби-клетки",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip": "Насколько эффективна эта вакцина. Число — максимальный шанс (в процентах) предотвратить превращение в зомби.",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness": "Эффективность: грубая вакцина",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip": "Насколько эффективна эта вакцина. Число — максимальный шанс (в процентах) предотвратить превращение в зомби.",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "Эффективность: простая вакцина",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "Насколько эффективна эта вакцина. Число — максимальный шанс (в процентах) предотвратить превращение в зомби.",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "Эффективность: идеальная вакцина",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Насколько эффективна эта вакцина. Число — максимальный шанс (в процентах) предотвратить превращение в зомби."
+}

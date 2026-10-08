@@ -1,0 +1,11 @@
+{
+    "Sandbox_SimpleVaccines": "Simple Vaccines",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness": "Skuteczność: gotowane komórki zombie",
+    "Sandbox_SimpleVaccines_BoiledZombieCellsEffectiveness_tooltip": "Określa skuteczność tej szczepionki. Wartość to maksymalna procentowa szansa na zapobieżenie zombifikacji.",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness": "Skuteczność: prymitywna szczepionka",
+    "Sandbox_SimpleVaccines_CrudeVaccineEffectiveness_tooltip": "Określa skuteczność tej szczepionki. Wartość to maksymalna procentowa szansa na zapobieżenie zombifikacji.",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness": "Skuteczność: prosta szczepionka",
+    "Sandbox_SimpleVaccines_SimpleVaccineEffectiveness_tooltip": "Określa skuteczność tej szczepionki. Wartość to maksymalna procentowa szansa na zapobieżenie zombifikacji.",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness": "Skuteczność: doskonała szczepionka",
+    "Sandbox_SimpleVaccines_PerfectVaccineEffectiveness_tooltip": "Określa skuteczność tej szczepionki. Wartość to maksymalna procentowa szansa na zapobieżenie zombifikacji."
+}

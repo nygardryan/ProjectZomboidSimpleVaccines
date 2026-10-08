@@ -1,0 +1,11 @@
+{
+    "UI_FAV_Cured": "Te has recuperado con exito del virus",
+    "UI_FAV_Extract": "Intento de extracción de ADN",
+    "UI_FAV_PERFECT": "Vacuna 95% efectiva al 7mo dia de la aplicacion, bajando su efectividad hasta llegar al mes (0%)",
+    "UI_FAV_NORMAL": "Vacuna 60% efectiva al 7mo dia de la aplicacion, bajando su efectividad hasta llegar al mes (0%)",
+    "UI_FAV_CRUDE": "Vacuna 35% efectiva al 7mo dia de la aplicacion, bajando su efectividad hasta llegar al mes (0%)",
+    "UI_FAV_BOILED": "Celulas zombie hervidas. 15% efectivas al 7mo día de consumidas, bajando su efectividad hasta llegar al mes (0%)",
+    "UI_FAV_CELLS": "Celulas zombie",
+    "UI_FAV_SYRINGE": "Jeringa vacia",
+    "UI_FAV_DIRTY_SYRINGE": "Jeringa sucia"
+}

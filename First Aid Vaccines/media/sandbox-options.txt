@@ -9,6 +9,7 @@ option SimpleVaccines.BoiledZombieCellsEffectiveness
 
 	page = SimpleVaccines,
 	translation = SimpleVaccines_BoiledZombieCellsEffectiveness,
+	valueTranslation = SimpleVaccines_BoiledZombieCellsEffectiveness,
 }
 
 option SimpleVaccines.CrudeVaccineEffectiveness
@@ -20,6 +21,7 @@ option SimpleVaccines.CrudeVaccineEffectiveness
 
 	page = SimpleVaccines,
 	translation = SimpleVaccines_CrudeVaccineEffectiveness,
+	valueTranslation = SimpleVaccines_CrudeVaccineEffectiveness,
 }
 
 option SimpleVaccines.SimpleVaccineEffectiveness
@@ -31,6 +33,7 @@ option SimpleVaccines.SimpleVaccineEffectiveness
 
 	page = SimpleVaccines,
 	translation = SimpleVaccines_SimpleVaccineEffectiveness,
+	valueTranslation = SimpleVaccines_SimpleVaccineEffectiveness,
 }
 
 option SimpleVaccines.PerfectVaccineEffectiveness
@@ -42,4 +45,5 @@ option SimpleVaccines.PerfectVaccineEffectiveness
 
 	page = SimpleVaccines,
 	translation = SimpleVaccines_PerfectVaccineEffectiveness,
+	valuetTranslation = SimpleVaccines_PerfectVaccineEffectiveness,
 }
